@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://nexorastudiodevv-ctrl.github.io/-nexora-studio-eg/sitemap.xml
+Sitemap: https://ahmed-alfayed.nexorastudio-eg.com/sitemap.xml
