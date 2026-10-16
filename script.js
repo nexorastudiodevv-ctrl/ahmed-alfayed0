@@ -6,3 +6,33 @@ document.querySelectorAll('a[href^="#"]').forEach((link) => {
     target.scrollIntoView({ behavior: "smooth", block: "start" });
   });
 });
+
+document.querySelectorAll("[data-whatsapp-form]").forEach((form) => {
+  form.addEventListener("submit", (event) => {
+    event.preventDefault();
+
+    const formData = new FormData(form);
+    const name = String(formData.get("name") || "").trim();
+    const email = String(formData.get("email") || "").trim();
+    const topic = String(formData.get("topic") || "").trim();
+    const message = String(formData.get("message") || "").trim();
+    const labels = form.dataset.language === "ar"
+      ? { name: "الاسم", email: "البريد الإلكتروني", request: "نوع الطلب" }
+      : { name: "Name", email: "Email", request: "Request" };
+    const lines = [
+      `${labels.name}: ${name}`,
+      email ? `${labels.email}: ${email}` : "",
+      `${labels.request}: ${topic}`,
+      "",
+      message,
+    ].filter((line) => line !== undefined);
+    const whatsappUrl = `https://wa.me/201152183562?text=${encodeURIComponent(lines.join("\n"))}`;
+    const whatsappWindow = window.open(whatsappUrl, "_blank");
+
+    if (whatsappWindow) {
+      whatsappWindow.opener = null;
+    } else {
+      window.location.assign(whatsappUrl);
+    }
+  });
+});
