@@ -1,0 +1,28 @@
+{
+  "id": "/",
+  "name": "Ahmed AlFayed | Nexora Studio EG",
+  "short_name": "Nexora Studio",
+  "description": "تطبيق Nexora Studio EG: تطبيقات أندرويد ومقالات البرمجة والذكاء الاصطناعي.",
+  "lang": "ar",
+  "dir": "rtl",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#f5f4ef",
+  "theme_color": "#f5f4ef",
+  "categories": ["technology", "education", "business"],
+  "icons": [
+    {
+      "src": "/assets/app-icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/assets/app-icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

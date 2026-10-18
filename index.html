@@ -7,6 +7,9 @@
     <meta name="author" content="Ahmed AlFayed" />
     <meta name="robots" content="index, follow, max-image-preview:large" />
     <meta name="theme-color" content="#f5f4ef" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="Nexora Studio" />
     <meta property="og:locale" content="ar_EG" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Ahmed AlFayed (Nexora Studio EG) | مطور أندرويد مستقل" />
@@ -24,6 +27,7 @@
     <meta name="twitter:image:alt" content="شعار Ahmed AlFayed (Nexora Studio EG)" />
     <link rel="icon" type="image/png" href="assets/nexora-brand.png" />
     <link rel="apple-touch-icon" href="assets/nexora-brand.png" />
+    <link rel="manifest" href="/manifest.webmanifest" />
     <title>Ahmed AlFayed | مطور أندرويد ومقالات البرمجة والذكاء الاصطناعي</title>
     <link rel="canonical" href="https://ahmed-alfayed.nexorastudio-eg.com/" />
     <link rel="alternate" hreflang="ar" href="https://ahmed-alfayed.nexorastudio-eg.com/" />
@@ -54,6 +58,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="app-pages.css" />
+    <link rel="stylesheet" href="pwa.css" />
   </head>
   <body>
     <header class="site-header">
@@ -204,7 +209,7 @@
       </section>
     </main>
 
-    <footer class="site-footer"><span>© 2026 Ahmed AlFayed (Nexora Studio EG)</span><span>صُنع بشغف لتجارب أندرويد أفضل</span><a href="blog/index.html">المدونة</a><a href="#home">إلى الأعلى ↑</a></footer>
+    <footer class="site-footer"><span>© 2026 Ahmed AlFayed (Nexora Studio EG)</span><span>صُنع بشغف لتجارب أندرويد أفضل</span><a href="blog/index.html">المدونة</a><button class="pwa-install-button" type="button" data-pwa-install>تثبيت الموقع كتطبيق</button><a href="#home">إلى الأعلى ↑</a></footer>
     <script src="script.js"></script>
   </body>
 </html>

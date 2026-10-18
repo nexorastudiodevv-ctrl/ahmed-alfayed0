@@ -1,0 +1,4 @@
+.pwa-install-button{padding:0;border:0;border-bottom:1px solid var(--line);background:transparent;color:inherit;font:700 10px Cairo,Arial,sans-serif;cursor:pointer}
+.pwa-install-button:hover{color:var(--ink);border-color:var(--ink)}
+.pwa-install-button:focus-visible{outline:3px solid #c9814d;outline-offset:4px}
+.pwa-install-button[hidden]{display:none}

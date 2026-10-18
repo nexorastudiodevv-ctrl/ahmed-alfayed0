@@ -7,6 +7,9 @@
     <meta name="author" content="Ahmed AlFayed" />
     <meta name="robots" content="index, follow, max-image-preview:large" />
     <meta name="theme-color" content="#f5f4ef" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="Nexora Studio" />
     <meta property="og:locale" content="en_US" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Ahmed AlFayed (Nexora Studio EG) | Independent Android Developer" />
@@ -24,11 +27,13 @@
     <link rel="alternate" hreflang="en" href="https://ahmed-alfayed.nexorastudio-eg.com/index-en.html" />
     <link rel="alternate" hreflang="x-default" href="https://ahmed-alfayed.nexorastudio-eg.com/" />
     <link rel="icon" type="image/png" href="assets/nexora-brand.png" />
+    <link rel="manifest" href="/manifest.webmanifest" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="app-pages.css" />
+    <link rel="stylesheet" href="pwa.css" />
     <title>Ahmed AlFayed | Android Developer, Programming & AI Articles</title>
     <script type="application/ld+json">
       {"@context":"https://schema.org","@type":"Person","name":"Ahmed AlFayed","alternateName":"Nexora Studio EG","jobTitle":"Independent Android Developer","description":"Android app developer from Egypt, publishing useful apps on Google Play and writing practical guides about programming, artificial intelligence, and app development.","sameAs":["https://play.google.com/store/apps/developer?id=Nexora+Studio+EG","https://www.linkedin.com/in/ahmed-shehata-04456143a"]}
@@ -57,7 +62,7 @@
       <section class="about section-shell" id="about"><div class="about-label"><span class="line"></span><p class="eyebrow">About the developer</p></div><div class="about-copy"><h2>Turning ideas<br />into <em>useful experiences.</em></h2><p>I’m Ahmed AlFayed, and Nexora Studio EG is my identity as an independent Android developer. I build my apps from design and engineering through to publishing on Google Play, with care for quality and detail.</p><div class="principles"><span>01 <b>Clarity</b></span><span>02 <b>Performance</b></span><span>03 <b>Impact</b></span></div></div></section>
       <section class="contact section-shell" id="contact"><div class="contact-intro"><p class="eyebrow">Have an idea?</p><h2>Let’s make something<br /><em>worth using.</em></h2><p class="contact-note">From an early idea to a live app on Google Play — send a message to discuss the next step.</p></div><div class="contact-side"><div class="contact-card"><span class="contact-card-icon">@</span><div><small>Email me</small><a href="mailto:nexorastudio.devv@gmail.com">nexorastudio.devv@gmail.com</a></div></div><div class="contact-card"><span class="contact-card-icon">↗</span><div><small>All apps</small><a href="https://play.google.com/store/apps/developer?id=Nexora+Studio+EG" target="_blank" rel="noopener noreferrer">Ahmed AlFayed on Google Play</a></div></div><div class="contact-card"><a class="whatsapp-link" href="https://wa.me/201152183562" target="_blank" rel="noopener noreferrer" aria-label="Contact on WhatsApp"><span class="whatsapp-icon" aria-hidden="true"><svg viewBox="0 0 24 24" role="img"><path d="M20.5 3.5A11.8 11.8 0 0 0 12.1 0C5.6 0 .4 5.2.4 11.7c0 2.1.6 4.1 1.6 5.8L.3 23.9l6.5-1.7a11.8 11.8 0 0 0 5.3 1.3h.1c6.4 0 11.7-5.2 11.7-11.7 0-3.1-1.2-6-3.4-8.3Zm-8.4 18c-1.7 0-3.4-.5-4.9-1.3l-.4-.2-3.9 1 1-3.8-.2-.4a9.7 9.7 0 1 1 8.4 4.7Zm5.3-7.2c-.3-.2-1.8-.9-2.1-1-.3-.1-.5-.2-.7.2-.2.3-.8 1-1 1.2-.2.2-.4.2-.7.1-.3-.2-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.7l.5-.6c.2-.2.2-.4.3-.6.1-.2 0-.5 0-.7-.1-.2-.7-1.7-1-2.3-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4-.3.3-1.1 1-1.1 2.5s1.1 2.9 1.3 3.1c.2.2 2.1 3.3 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.8-.7 2.1-1.4.3-.7.3-1.3.2-1.4-.1-.2-.3-.3-.6-.4Z"/></svg></span><span><small>WhatsApp</small><strong>+20 115 218 3562</strong></span></a></div><div class="contact-card"><span class="contact-card-icon">⌘</span><div><small>Code projects</small><a href="https://github.com/nexorastudiodevv-ctrl" target="_blank" rel="noopener noreferrer">Find me on GitHub</a></div></div><div class="contact-card"><span class="contact-card-icon">in</span><div><small>LinkedIn</small><a href="https://www.linkedin.com/in/ahmed-shehata-04456143a" target="_blank" rel="noopener noreferrer">Connect on LinkedIn</a></div></div><form class="inquiry-form" data-whatsapp-form data-language="en"><p class="inquiry-form-title">Tell me about your idea</p><label for="contact-name-en">Your name</label><input id="contact-name-en" name="name" autocomplete="name" required /><label for="contact-email-en">Email <span>(optional)</span></label><input id="contact-email-en" name="email" type="email" autocomplete="email" /><label for="contact-topic-en">What do you need?</label><select id="contact-topic-en" name="topic"><option>Android app development</option><option>Improve an existing app</option><option>General question</option></select><label for="contact-message-en">How can I help?</label><textarea id="contact-message-en" name="message" rows="4" required></textarea><button class="button button-light inquiry-submit" type="submit">Continue to WhatsApp <span>↗</span></button><small class="inquiry-privacy">WhatsApp will open with a draft for you to review and send. This website does not store your details.</small></form><a class="button button-light contact-button" href="mailto:nexorastudio.devv@gmail.com">Start a conversation <span>↗</span></a></div></section>
     </main>
-    <footer class="site-footer"><span>© 2026 Ahmed AlFayed (Nexora Studio EG)</span><span>Made with care for better Android experiences</span><a href="blog/index-en.html">Blog</a><a href="#home">Back to top ↑</a></footer>
+    <footer class="site-footer"><span>© 2026 Ahmed AlFayed (Nexora Studio EG)</span><span>Made with care for better Android experiences</span><a href="blog/index-en.html">Blog</a><button class="pwa-install-button" type="button" data-pwa-install>Install as an app</button><a href="#home">Back to top ↑</a></footer>
     <script src="script.js"></script>
   </body>
 </html>
