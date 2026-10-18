@@ -15,7 +15,8 @@ document.querySelectorAll("[data-blog-categories]").forEach((categoryList) => {
       });
 
       cards.forEach((card) => {
-        const isVisible = selectedCategory === "all" || card.dataset.blogCategory === selectedCategory;
+        const categories = card.dataset.blogCategory.split(/\s+/);
+        const isVisible = selectedCategory === "all" || categories.includes(selectedCategory);
         card.hidden = !isVisible;
         if (isVisible) visibleCount += 1;
       });
