@@ -1,3 +1,41 @@
+const phoneCarousel = document.querySelector("[data-phone-carousel]");
+
+if (phoneCarousel) {
+  const slides = Array.from(phoneCarousel.querySelectorAll(".phone-preview"));
+  const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
+  let activeIndex = 0;
+  let rotationTimer;
+
+  const showSlide = (index) => {
+    slides[activeIndex].classList.remove("is-active");
+    slides[activeIndex].setAttribute("aria-hidden", "true");
+    activeIndex = index;
+    slides[activeIndex].classList.add("is-active");
+    slides[activeIndex].removeAttribute("aria-hidden");
+  };
+
+  const stopRotation = () => {
+    window.clearInterval(rotationTimer);
+    rotationTimer = undefined;
+  };
+
+  const startRotation = () => {
+    stopRotation();
+    if (reducedMotion.matches || document.hidden || slides.length < 2) return;
+    rotationTimer = window.setInterval(() => {
+      showSlide((activeIndex + 1) % slides.length);
+    }, 3000);
+  };
+
+  document.addEventListener("visibilitychange", startRotation);
+  if (typeof reducedMotion.addEventListener === "function") {
+    reducedMotion.addEventListener("change", startRotation);
+  } else {
+    reducedMotion.addListener(startRotation);
+  }
+  startRotation();
+}
+
 document.querySelectorAll('a[href^="#"]').forEach((link) => {
   link.addEventListener("click", (event) => {
     const target = document.querySelector(link.getAttribute("href"));

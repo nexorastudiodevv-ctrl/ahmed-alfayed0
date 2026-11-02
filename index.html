@@ -59,6 +59,7 @@
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="app-pages.css" />
     <link rel="stylesheet" href="pwa.css" />
+    <link rel="stylesheet" href="phone-carousel.css" />
   </head>
   <body>
     <header class="site-header">
@@ -91,18 +92,15 @@
             <div><strong>من القاهرة</strong><span>إلى العالم</span></div>
           </div>
         </div>
-        <div class="hero-art" aria-label="هاتف يعرض تطبيق أندرويد">
+        <div class="hero-art" aria-label="هاتف يعرض لقطات شاشة من تطبيقات أندرويد">
           <div class="orbit orbit-one"></div>
           <div class="orbit orbit-two"></div>
           <div class="phone">
             <div class="phone-notch"></div>
-            <div class="phone-screen">
-              <div class="screen-top"><span>9:41</span><span>▴ ◌ ▰</span></div>
-              <div class="app-greeting">صباح الخير،<br /><b>مستكشف.</b></div>
-              <div class="screen-card"><span class="mini-icon">✦</span><div><small>تقدّم اليوم</small><strong>72%</strong></div><span class="arrow">↗</span></div>
-              <div class="screen-label">أدواتك المفضلة</div>
-              <div class="screen-grid"><span>◒<small>التركيز</small></span><span>⌁<small>المهام</small></span><span>◷<small>الوقت</small></span><span>✧<small>المزيد</small></span></div>
-              <div class="screen-bottom"></div>
+            <div class="phone-screen phone-screen-carousel" data-phone-carousel aria-label="لقطات شاشة التطبيقات" aria-live="off">
+              <img class="phone-preview is-active" src="assets/quran-screen.png" alt="لقطة شاشة تطبيق المصحف الكوني" width="720" height="1600" decoding="async" fetchpriority="high" />
+              <img class="phone-preview" src="assets/megabit-screen.png" alt="لقطة شاشة تطبيق ميجابت" width="720" height="1600" decoding="async" aria-hidden="true" />
+              <img class="phone-preview" src="assets/pdf-screen.png" alt="لقطة شاشة تطبيق Nexora Office PDF" width="720" height="1600" decoding="async" aria-hidden="true" />
             </div>
           </div>
           <span class="floating-note note-one">بسيط، لكنه ذكي <b>✦</b></span>

@@ -7,6 +7,7 @@ const APP_SHELL = [
   "/offline.html",
   "/manifest.webmanifest",
   "/styles.css",
+  "/phone-carousel.css",
   "/app-pages.css",
   "/pwa.css",
   "/script.js",
@@ -18,6 +19,9 @@ const APP_SHELL = [
   "/assets/quran-icon.png",
   "/assets/gold-currency-dashboard.png",
   "/assets/avam-flight-booking.png",
+  "/assets/quran-screen.png",
+  "/assets/megabit-screen.png",
+  "/assets/pdf-screen.png",
 ];
 
 self.addEventListener("install", (event) => {
