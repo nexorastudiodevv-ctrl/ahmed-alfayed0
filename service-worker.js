@@ -1,5 +1,5 @@
 const CACHE_PREFIX = "nexora-pwa-";
-const CACHE_NAME = `${CACHE_PREFIX}v1`;
+const CACHE_NAME = `${CACHE_PREFIX}v2`;
 const APP_SHELL = [
   "/",
   "/index.html",
@@ -11,9 +11,10 @@ const APP_SHELL = [
   "/app-pages.css",
   "/pwa.css",
   "/script.js",
-  "/assets/app-icon-192.png",
-  "/assets/app-icon-512.png",
-  "/assets/nexora-brand.png",
+  "/assets/ahmed-profile-icon-32.png",
+  "/assets/ahmed-profile-icon-180.png",
+  "/assets/ahmed-profile-icon-192.png",
+  "/assets/ahmed-profile-icon-512.png",
   "/assets/megabit-icon.png",
   "/assets/nexora-office-icon.png",
   "/assets/quran-icon.png",
