@@ -1,0 +1,9 @@
+.blog-article-content .blog-article-figure{margin:0 0 28px}
+.blog-article-figure img{display:block;width:100%;height:auto;border-radius:10px}
+.blog-article-figure figcaption{margin-top:8px;color:var(--muted);font-size:12px}
+.blog-article-content pre{overflow-x:auto;margin:20px 0;padding:18px 20px;border-radius:8px;background:#17211f;color:#eef2e8;direction:ltr;text-align:left;line-height:1.7}
+.blog-article-content pre code{font:13px/1.7 Consolas,"Courier New",monospace}
+.blog-source-list{margin-top:12px}
+.blog-video{position:relative;overflow:hidden;width:100%;aspect-ratio:16/9;margin:22px 0 12px;border-radius:10px;background:#17211f}
+.blog-video iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.blog-video-fallback{font-size:13px}

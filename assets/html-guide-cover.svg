@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" fill="none">
+  <defs>
+    <linearGradient id="background" x1="72" y1="40" x2="1128" y2="590" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#17211F"/>
+      <stop offset="1" stop-color="#304438"/>
+    </linearGradient>
+    <linearGradient id="panel" x1="648" y1="127" x2="1094" y2="503" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#24342F"/>
+      <stop offset="1" stop-color="#1B2824"/>
+    </linearGradient>
+  </defs>
+  <path fill="url(#background)" d="M0 0h1200v630H0z"/>
+  <circle cx="130" cy="85" r="205" fill="#829B83" opacity=".12"/>
+  <circle cx="1115" cy="590" r="250" fill="#C5D4AF" opacity=".08"/>
+  <rect x="638" y="106" width="480" height="418" rx="22" fill="url(#panel)" stroke="#829B83" stroke-opacity=".5" stroke-width="2"/>
+  <path fill="#293A34" d="M638 128a22 22 0 0 1 22-22h436a22 22 0 0 1 22 22v52H638v-52Z"/>
+  <circle cx="674" cy="146" r="7" fill="#E8947B"/>
+  <circle cx="700" cy="146" r="7" fill="#E8C87B"/>
+  <circle cx="726" cy="146" r="7" fill="#9EBB8C"/>
+  <text x="1008" y="153" fill="#AEBEB2" font-family="Arial,sans-serif" font-size="16" text-anchor="end">index.html</text>
+  <text x="692" y="246" fill="#E8C87B" font-family="Consolas,monospace" font-size="25">&lt;html</text>
+  <text x="793" y="246" fill="#B8D1A8" font-family="Consolas,monospace" font-size="25">lang="ar"&gt;</text>
+  <text x="722" y="297" fill="#E8C87B" font-family="Consolas,monospace" font-size="25">&lt;main&gt;</text>
+  <text x="753" y="348" fill="#E8C87B" font-family="Consolas,monospace" font-size="25">&lt;h1&gt;</text>
+  <text x="841" y="348" fill="#F2F1E9" font-family="Arial,sans-serif" font-size="24">موقعك يبدأ هنا</text>
+  <text x="753" y="399" fill="#E8C87B" font-family="Consolas,monospace" font-size="25">&lt;/h1&gt;</text>
+  <text x="722" y="450" fill="#E8C87B" font-family="Consolas,monospace" font-size="25">&lt;/main&gt;</text>
+  <text x="536" y="282" fill="#F2F1E9" font-family="Arial,sans-serif" font-size="64" font-weight="700" text-anchor="end">تعلّم HTML</text>
+  <text x="536" y="347" fill="#C5D4AF" font-family="Arial,sans-serif" font-size="28" text-anchor="end">ابنِ أول صفحة ويب خطوة بخطوة</text>
+  <rect x="357" y="390" width="178" height="48" rx="24" fill="#829B83"/>
+  <text x="446" y="421" fill="#17211F" font-family="Arial,sans-serif" font-size="18" font-weight="700" text-anchor="middle">دليل للمبتدئين</text>
+  <text x="536" y="545" fill="#AEBEB2" font-family="Arial,sans-serif" font-size="18" text-anchor="end">NEXORA STUDIO EG · WEB DEVELOPMENT</text>
+</svg>

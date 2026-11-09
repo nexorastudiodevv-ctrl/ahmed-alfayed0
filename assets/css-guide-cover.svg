@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title description">
+  <title id="title">CSS beginner guide</title>
+  <desc id="description">A stylized code editor and web page card demonstrating CSS styling.</desc>
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#17211f"/>
+      <stop offset="1" stop-color="#35483d"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#c5d99e"/>
+      <stop offset="1" stop-color="#79ae83"/>
+    </linearGradient>
+    <pattern id="grid" width="36" height="36" patternUnits="userSpaceOnUse">
+      <path d="M36 0H0V36" fill="none" stroke="#e4f0e2" stroke-opacity=".055"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="630" rx="28" fill="url(#background)"/>
+  <rect width="1200" height="630" rx="28" fill="url(#grid)"/>
+  <circle cx="953" cy="158" r="220" fill="#9cc68f" opacity=".09"/>
+  <g transform="translate(82 96)">
+    <rect width="660" height="438" rx="22" fill="#101614" stroke="#82968a" stroke-opacity=".55" stroke-width="2"/>
+    <path d="M0 64h660" stroke="#3d4c43" stroke-width="2"/>
+    <circle cx="34" cy="32" r="8" fill="#df8271"/>
+    <circle cx="64" cy="32" r="8" fill="#e9c36d"/>
+    <circle cx="94" cy="32" r="8" fill="#86bf88"/>
+    <rect x="523" y="20" width="110" height="24" rx="12" fill="#293b30"/>
+    <text x="578" y="37" fill="#d2dfd2" font-family="Arial,sans-serif" font-size="12" text-anchor="middle">styles.css</text>
+    <g font-family="Consolas,monospace" font-size="20">
+      <text x="38" y="113" fill="#80958a">01</text>
+      <text x="76" y="113" fill="#b9d98e">.hero</text>
+      <text x="135" y="113" fill="#e5ece5"> {</text>
+      <text x="38" y="155" fill="#80958a">02</text>
+      <text x="92" y="155" fill="#d9e7d6">  display:</text>
+      <text x="194" y="155" fill="#8ec59a"> grid</text>
+      <text x="38" y="197" fill="#80958a">03</text>
+      <text x="92" y="197" fill="#d9e7d6">  gap:</text>
+      <text x="157" y="197" fill="#d9b77d"> 2rem</text>
+      <text x="38" y="239" fill="#80958a">04</text>
+      <text x="92" y="239" fill="#d9e7d6">  color:</text>
+      <text x="172" y="239" fill="#b9d98e"> #f5f4ef</text>
+      <text x="38" y="281" fill="#80958a">05</text>
+      <text x="92" y="281" fill="#d9e7d6">  padding:</text>
+      <text x="194" y="281" fill="#d9b77d"> 3rem</text>
+      <text x="38" y="323" fill="#80958a">06</text>
+      <text x="76" y="323" fill="#e5ece5">}</text>
+    </g>
+    <rect x="82" y="367" width="254" height="42" rx="12" fill="#22352a"/>
+    <text x="209" y="394" fill="#cfe0c8" font-family="Arial,sans-serif" font-size="15" text-anchor="middle">selectors · layout · responsive</text>
+  </g>
+  <g transform="translate(808 129)">
+    <rect x="10" y="20" width="285" height="356" rx="22" fill="#101614" opacity=".38" transform="rotate(5 150 190)"/>
+    <rect width="285" height="356" rx="22" fill="#f5f4ec" stroke="#d7ddce" stroke-width="2"/>
+    <rect width="285" height="67" rx="22" fill="#e4e9dc"/>
+    <path d="M0 46h285v21H0z" fill="#e4e9dc"/>
+    <circle cx="35" cy="34" r="8" fill="#89ad8c"/>
+    <rect x="61" y="27" width="91" height="14" rx="7" fill="#bdcbb7"/>
+    <rect x="25" y="93" width="235" height="120" rx="13" fill="#dfe8d8"/>
+    <rect x="43" y="113" width="92" height="80" rx="10" fill="url(#accent)"/>
+    <rect x="151" y="117" width="82" height="12" rx="6" fill="#506c52"/>
+    <rect x="151" y="141" width="66" height="8" rx="4" fill="#a4b09f"/>
+    <rect x="151" y="158" width="76" height="8" rx="4" fill="#a4b09f"/>
+    <rect x="25" y="233" width="235" height="93" rx="12" fill="#fffdf8" stroke="#d9ddd3"/>
+    <rect x="43" y="252" width="62" height="54" rx="8" fill="#7fa585"/>
+    <rect x="120" y="254" width="112" height="10" rx="5" fill="#485d4b"/>
+    <rect x="120" y="276" width="94" height="7" rx="4" fill="#aab4a5"/>
+    <rect x="120" y="292" width="105" height="7" rx="4" fill="#aab4a5"/>
+  </g>
+  <g transform="translate(833 490)">
+    <rect width="216" height="62" rx="18" fill="url(#accent)"/>
+    <text x="108" y="43" fill="#142219" font-family="Arial,sans-serif" font-size="30" font-weight="700" text-anchor="middle">CSS</text>
+  </g>
+</svg>

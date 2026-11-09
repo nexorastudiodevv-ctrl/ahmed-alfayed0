@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="دليل CSS عربي للمبتدئين: تنسيق النصوص والألوان، المحددات، نموذج الصندوق، Flexbox، Grid والتصميم المتجاوب، مع أمثلة ودورة فيديو كاملة." />
+    <meta name="author" content="Ahmed AlFayed" />
+    <meta name="robots" content="index, follow" />
+    <meta property="og:type" content="article" />
+    <meta property="og:locale" content="ar_EG" />
+    <meta property="og:title" content="تعلم CSS من الصفر: دليل عملي لتنسيق صفحات الويب" />
+    <meta property="og:description" content="تعلم كيف تنسق صفحات الويب باستخدام CSS عبر أمثلة عملية، مع دورة فيديو عربية مضمّنة ومصادر للتعلم." />
+    <meta property="og:url" content="https://ahmed-alfayed.nexorastudio-eg.com/blog/css-guide.html" />
+    <meta property="og:image" content="https://ahmed-alfayed.nexorastudio-eg.com/assets/css-guide-cover-design.png" />
+    <meta property="og:image:alt" content="غلاف دليل تعلم CSS من الصفر باللغة العربية" />
+    <link rel="canonical" href="https://ahmed-alfayed.nexorastudio-eg.com/blog/css-guide.html" />
+    <link rel="alternate" hreflang="ar" href="https://ahmed-alfayed.nexorastudio-eg.com/blog/css-guide.html" />
+    <link rel="icon" type="image/png" href="../assets/ahmed-profile-icon-512.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../styles.css" />
+    <link rel="stylesheet" href="../app-pages.css" />
+    <link rel="stylesheet" href="blog.css" />
+    <link rel="stylesheet" href="article-media.css" />
+    <title>تعلم CSS من الصفر: دليل عملي لتنسيق صفحات الويب | Nexora</title>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "تعلم CSS من الصفر: دليل عملي لتنسيق صفحات الويب",
+        "description": "شرح عملي لأساسيات CSS والتخطيط المتجاوب مع قائمة تشغيل عربية مضمّنة ومصادر إضافية.",
+        "image": "https://ahmed-alfayed.nexorastudio-eg.com/assets/css-guide-cover-design.png",
+        "datePublished": "2026-11-09",
+        "dateModified": "2026-11-09",
+        "inLanguage": "ar",
+        "author": {
+          "@type": "Person",
+          "name": "Ahmed AlFayed"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "Nexora Studio EG",
+          "url": "https://ahmed-alfayed.nexorastudio-eg.com/"
+        },
+        "mainEntityOfPage": "https://ahmed-alfayed.nexorastudio-eg.com/blog/css-guide.html"
+      }
+    </script>
+    <meta property="og:site_name" content="Ahmed AlFayed (Nexora Studio EG)" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="تعلم CSS من الصفر: دليل عملي لتنسيق صفحات الويب" />
+    <meta name="twitter:description" content="أساسيات CSS بأمثلة عملية ودورة فيديو عربية كاملة يمكنك مشاهدتها داخل المقال." />
+    <meta name="twitter:image" content="https://ahmed-alfayed.nexorastudio-eg.com/assets/css-guide-cover-design.png" />
+    <meta name="twitter:image:alt" content="غلاف دليل تعلم CSS من الصفر باللغة العربية" />
+    <link rel="stylesheet" href="article-share.css" />
+    <script defer src="article-share.js"></script>
+    <meta name="google-adsense-account" content="ca-pub-4360758752869014" />
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4360758752869014" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="../index.html" aria-label="العودة إلى موقع Nexora Studio EG"><img class="brand-logo" src="../assets/ahmed-profile-icon-512.png" alt="شعار Nexora Studio EG" width="768" height="768" decoding="async" /><span><strong>Ahmed AlFayed</strong><small>Nexora Studio EG · مطور مستقل</small></span></a>
+      <nav class="nav-links" aria-label="التنقل"><a href="../index.html#work">التطبيقات</a><a href="index.html">المدونة</a><a href="../contact.html">تواصل</a></nav>
+      <div class="header-actions"><a class="language-switch" href="index-en.html" lang="en" hreflang="en">English</a><a class="header-cta" href="index.html">كل المقالات <span>↗</span></a></div>
+    </header>
+    <main class="blog-article-main">
+      <nav class="blog-breadcrumb" aria-label="مسار الصفحة"><a href="../index.html">الرئيسية</a><span>/</span><a href="index.html">المدونة</a><span>/</span><span aria-current="page">البرمجة والتطوير</span></nav>
+      <article>
+        <header class="blog-article-header">
+          <div class="blog-card-meta"><span class="blog-category">البرمجة والتطوير · CSS</span><time datetime="2026-11-09">9 نوفمبر 2026</time></div>
+          <h1>تعلم CSS من الصفر: دليل عملي لتنسيق صفحات الويب</h1>
+          <p class="blog-article-summary">HTML تبني محتوى الصفحة، وCSS تمنحه الشكل والترتيب. في هذا الدليل ستتعرف على المحددات والألوان والمسافات والتخطيط المتجاوب، مع أمثلة قابلة للتجربة ودورة فيديو عربية يمكنك فتحها ومشاهدتها داخل المقال.</p>
+        </header>
+        <div class="blog-article-content">
+          <figure class="blog-article-figure">
+            <img src="../assets/css-guide-cover-design.png" alt="غلاف دليل تعلم CSS من الصفر مع مثال لتنسيق صفحة ويب" width="1463" height="768" fetchpriority="high" />
+            <figcaption>تصف CSS كيف يعرض المتصفح عناصر صفحة HTML.</figcaption>
+          </figure>
+          <p>عندما ترى صفحة ويب مرتبة بألوان متناسقة وعناوين واضحة وتخطيط يعمل على الهاتف والكمبيوتر، فـ CSS هي التي تتحكم في جانب كبير من هذا المظهر. واسمها اختصار لـ Cascading Style Sheets، أي أوراق الأنماط المتتالية. سنبدأ بالمفاهيم التي تحتاجها لبناء تنسيق منظم بدل حفظ خصائص منفصلة.</p>
+
+          <h2>ما دور CSS؟</h2>
+          <p>تصف HTML بنية المحتوى ومعناه، مثل العناوين والفقرات والأزرار. أما CSS فتحدد كيف تظهر هذه العناصر: اللون والخط والمسافة والحجم، وكذلك كيفية ترتيبها وتكيّفها مع حجم الشاشة. وفصل المحتوى عن المظهر يجعل تعديل التصميم وإعادة استخدامه أسهل.</p>
+
+          <h2>كيف تكتب قاعدة CSS؟</h2>
+          <p>تتكون القاعدة من محدد يختار عنصرًا أو مجموعة عناصر، ثم مجموعة تصريحات بين أقواس معقوفة. كل تصريح يضم خاصية وقيمة:</p>
+          <figure class="blog-article-figure">
+            <img src="../assets/css-rule-example.png" alt="مثال قاعدة CSS تحدد لون الفقرة وحجم الخط وارتفاع السطر" width="1738" height="768" loading="lazy" />
+            <figcaption>تختار القاعدة عناصر الفقرة وتحدد خصائص مظهرها.</figcaption>
+          </figure>
+          <p>في المثال، يختار المحدد <code>p</code> جميع الفقرات، ثم يحدد لون النص وحجمه وارتفاع السطر. ضع الفاصلة المنقوطة بين التصريحات، واستخدم مسافات بادئة ثابتة ليسهل عليك قراءة الملف.</p>
+
+          <h2>المحددات: اختر العنصر الذي تريد تنسيقه</h2>
+          <p>يختار محدد العنصر من HTML. من المحددات الشائعة اسم العنصر، والصنف، والمعرّف. الصنف مناسب لتنسيق عدة عناصر، فيما يُستخدم المعرّف عادةً لعنصر واحد ذي وظيفة مميزة.</p>
+          <figure class="blog-article-figure">
+            <img src="../assets/css-selectors-example.png" alt="أمثلة محددات CSS لعنصر h1 وصنف button ومعرّف main-title" width="1082" height="768" loading="lazy" />
+            <figcaption>يبدأ محدد الصنف بنقطة، بينما يبدأ محدد المعرّف بعلامة #.</figcaption>
+          </figure>
+          <p>أضف الصنف إلى HTML مثل <code>&lt;button class="button"&gt;</code>، واكتب نقطة قبل اسم الصنف في CSS. أما المعرّف فيبدأ في المحدد بعلامة <code>#</code>. تجنب الإفراط في المحددات شديدة التخصيص حتى تبقى القواعد سهلة التعديل وإعادة الاستخدام.</p>
+
+          <h2>التتابع والوراثة وخصوصية المحددات</h2>
+          <p>قد تنطبق أكثر من قاعدة على العنصر نفسه. يختار المتصفح القيمة الفائزة وفق مصدر القاعدة وخصوصية المحدد وترتيب القواعد، مع أولوية أعلى عادةً للمحدد الأكثر تخصيصًا. بعض الخصائص، مثل لون النص، تُورّث غالبًا إلى العناصر الداخلية؛ بينما خصائص مثل الهوامش لا تُورّث عادةً.</p>
+          <p>لتقليل التعارض، ابدأ بمحددات بسيطة، واجمع القيم المتكررة في أصناف قابلة لإعادة الاستخدام، وتجنب الاعتماد على <code>!important</code> إلا عند وجود حاجة محددة.</p>
+
+          <h2>نموذج الصندوق: افهم الأبعاد والمسافات</h2>
+          <p>يتعامل المتصفح مع كل عنصر تقريبًا كصندوق. يتكون من المحتوى، ثم الحشو الداخلي <code>padding</code>، والإطار <code>border</code>، والهامش الخارجي <code>margin</code>. افتراضيًا قد يضاف الحشو والإطار إلى العرض المعلن، لذلك يساعد هذا الإعداد على جعل قياس العناصر أبسط:</p>
+          <figure class="blog-article-figure">
+            <img src="../assets/css-box-sizing-example.png" alt="مثال CSS يطبق box-sizing border-box على جميع العناصر والعناصر الزائفة" width="1738" height="768" loading="lazy" />
+            <figcaption>يساعد <code>border-box</code> على تضمين الحشو والإطار ضمن العرض المعلن.</figcaption>
+          </figure>
+          <figure class="blog-article-figure">
+            <img src="../assets/css-box-model-design.png" alt="مخطط CSS Box Model يوضح المحتوى والحشو والإطار والهامش من الداخل إلى الخارج" width="1844" height="768" loading="lazy" />
+            <figcaption>من الداخل إلى الخارج: المحتوى، ثم الحشو، ثم الإطار، ثم الهامش.</figcaption>
+          </figure>
+
+          <h2>رتّب العناصر باستخدام Flexbox وGrid</h2>
+          <p><code>Flexbox</code> مناسب لترتيب العناصر في اتجاه واحد، أفقيًا أو رأسيًا، مثل شريط التنقل أو مجموعة أزرار. أما <code>Grid</code> فيناسب التخطيطات التي تحتاج صفوفًا وأعمدة معًا، مثل شبكة بطاقات.</p>
+          <figure class="blog-article-figure">
+            <img src="../assets/css-layout-example.png" alt="مثال CSS لترتيب عناصر التنقل باستخدام Flexbox والبطاقات باستخدام Grid" width="1082" height="768" loading="lazy" />
+            <figcaption>Flexbox لترتيب العناصر في اتجاه واحد، وGrid لتقسيمها إلى صفوف وأعمدة.</figcaption>
+          </figure>
+          <p>ابدأ باختيار أداة التخطيط بحسب شكل الواجهة، ثم استخدم <code>gap</code> للمسافات بين العناصر بدل إضافة هوامش متفرقة يصعب ضبطها لاحقًا.</p>
+
+          <h2>التصميم المتجاوب مع الهاتف</h2>
+          <p>التصميم المتجاوب يجعل الواجهة ملائمة لأحجام الشاشات المختلفة. ابدأ بتخطيط مرن، واستخدم وحدات نسبية عند الحاجة، ثم أضف استعلامًا إعلاميًا عندما يحتاج المحتوى إلى تغيير ترتيب الأعمدة أو عددها عند عرض أضيق.</p>
+          <figure class="blog-article-figure">
+            <img src="../assets/css-responsive-example.png" alt="مثال CSS Grid واستعلام إعلامي لتغيير البطاقات إلى عمود واحد على الشاشات الضيقة" width="1143" height="768" loading="lazy" />
+            <figcaption>غيّر التخطيط عند النقطة التي يصبح فيها المحتوى مزدحمًا، لا وفق اسم جهاز محدد.</figcaption>
+          </figure>
+          <p>لا تختَر نقطة التوقف بناءً على أسماء أجهزة بعينها؛ ضيّق نافذة المتصفح وراقب متى يصبح المحتوى مزدحمًا، ثم أضف نقطة التوقف المناسبة. واختبر النصوص الطويلة والأزرار والصور، لا التخطيط وحده.</p>
+
+          <h2>تمرين صغير لتجربة ما تعلمته</h2>
+          <p>أنشئ بطاقة ملف شخصي تحتوي على عنوان ووصف وزر. اجعل عرضها مناسبًا للقراءة، وأضف حشوًا وإطارًا، ثم وسّطها باستخدام Flexbox أو Grid. جرّب تغيير اللون والخط، وافحص شكلها على الهاتف.</p>
+          <figure class="blog-article-figure">
+            <img src="../assets/css-profile-card-example.png" alt="مثال CSS لتنسيق بطاقة ملف شخصي وزرها باستخدام الحشو والإطار والظل" width="817" height="768" loading="lazy" />
+            <figcaption>طبّق الحشو والحدود والألوان والظل، ثم جرّب شكل البطاقة على الهاتف.</figcaption>
+          </figure>
+
+          <h2>دورة CSS كاملة بالفيديو داخل المقال</h2>
+          <p>يمكنك مشاهدة قائمة تشغيل دورة <strong>Learn CSS In Arabic 2021</strong> من Elzero Web School مباشرةً هنا. شغّل الفيديو من المشغّل، وانتقل بين دروس القائمة من أدوات YouTube. لا تحتاج إلى فتح صفحة القناة أو مغادرة المقال لمشاهدة الفيديو المضمّن.</p>
+          <div class="blog-video">
+            <iframe
+              src="https://www.youtube-nocookie.com/embed/videoseries?list=PLDoPjvoNmBAzjsz06gkzlSrlev53MGIKe&amp;hl=ar"
+              title="دورة Learn CSS In Arabic 2021 من Elzero Web School"
+              loading="lazy"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <p class="blog-video-fallback">إذا لم يظهر المشغّل أو منعت إعدادات المتصفح تشغيله، <a href="https://www.youtube.com/playlist?list=PLDoPjvoNmBAzjsz06gkzlSrlev53MGIKe" target="_blank" rel="noopener noreferrer">افتح دورة CSS مباشرةً على YouTube</a>. قد يعتمد التشغيل المضمّن على اتصال الإنترنت وتوفر الفيديو وإعدادات الخصوصية في المتصفح.</p>
+
+          <h2>مصادر موثوقة لمواصلة التعلم</h2>
+          <ul class="blog-source-list">
+            <li><a href="https://www.youtube.com/playlist?list=PLDoPjvoNmBAzjsz06gkzlSrlev53MGIKe" target="_blank" rel="noopener noreferrer">دورة Learn CSS In Arabic 2021 — Elzero Web School</a>: قائمة تشغيل محددة لدورة CSS، وليست رابطًا عامًا للقناة.</li>
+            <li><a href="https://academy.hsoub.com/programming/css/" target="_blank" rel="noopener noreferrer">أكاديمية حسوب: مقالات CSS</a>: دروس عربية تطبيقية عن التنسيق وتصميم عناصر الويب.</li>
+            <li><a href="https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Styling_basics" target="_blank" rel="noopener noreferrer">مسار تعلم CSS من MDN</a>: دروس مرجعية للمبتدئين باللغة الإنجليزية، تشرح أساسيات التنسيق والتطبيق العملي.</li>
+            <li><a href="https://www.w3.org/TR/css/" target="_blank" rel="noopener noreferrer">مواصفات CSS لدى W3C</a>: المرجع الرسمي للمواصفات، وهو مفيد عند البحث عن السلوك الدقيق للغة.</li>
+          </ul>
+
+          <h2>الخلاصة</h2>
+          <p>تعلّم CSS يصبح أسهل عندما تفهم القواعد الأساسية: كيف تختار العنصر، وكيف يحسب المتصفح المسافات والأبعاد، ومتى تستخدم Flexbox أو Grid. طبّق كل مفهوم في صفحة صغيرة واختبرها على أكثر من حجم شاشة، ثم استخدم دورة الفيديو والمصادر المرفقة للتوسع خطوة بخطوة.</p>
+          <footer class="blog-post-footer"><a href="javascript-guide.html">تعلم JavaScript من الصفر</a><a href="index.html">كل مقالات البرمجة والتطوير</a><a href="../index.html#work">تطبيقات Nexora</a></footer>
+        </div>
+      </article>
+    </main>
+    <footer class="site-footer"><span>© 2026 Ahmed AlFayed (Nexora Studio EG)</span><a href="../index.html">العودة إلى الموقع ↑</a></footer>
+  </body>
+</html>

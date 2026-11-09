@@ -2,37 +2,43 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://ahmed-alfayed.nexorastudio-eg.com/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>1.0</priority>
+    <lastmod>2026-11-09</lastmod>
   </url>
   <url>
     <loc>https://ahmed-alfayed.nexorastudio-eg.com/apps/megabit.html</loc>
+    <lastmod>2026-11-09</lastmod>
   </url>
   <url>
     <loc>https://ahmed-alfayed.nexorastudio-eg.com/apps/nexora-office.html</loc>
+    <lastmod>2026-11-09</lastmod>
   </url>
   <url>
     <loc>https://ahmed-alfayed.nexorastudio-eg.com/apps/quran.html</loc>
+    <lastmod>2026-11-09</lastmod>
   </url>
   <url>
     <loc>https://ahmed-alfayed.nexorastudio-eg.com/index-en.html</loc>
+    <lastmod>2026-11-09</lastmod>
   </url>
   <url>
     <loc>https://ahmed-alfayed.nexorastudio-eg.com/apps/megabit-en.html</loc>
+    <lastmod>2026-11-09</lastmod>
   </url>
   <url>
     <loc>https://ahmed-alfayed.nexorastudio-eg.com/apps/nexora-office-en.html</loc>
+    <lastmod>2026-11-09</lastmod>
   </url>
   <url>
     <loc>https://ahmed-alfayed.nexorastudio-eg.com/apps/quran-en.html</loc>
+    <lastmod>2026-11-09</lastmod>
   </url>
   <url>
     <loc>https://ahmed-alfayed.nexorastudio-eg.com/blog/</loc>
-    <lastmod>2026-10-18</lastmod>
+    <lastmod>2026-11-09</lastmod>
   </url>
   <url>
     <loc>https://ahmed-alfayed.nexorastudio-eg.com/blog/index-en.html</loc>
-    <lastmod>2026-10-18</lastmod>
+    <lastmod>2026-11-09</lastmod>
   </url>
   <url>
     <loc>https://ahmed-alfayed.nexorastudio-eg.com/blog/ai-on-device.html</loc>
@@ -48,29 +54,44 @@
   </url>
   <url>
     <loc>https://ahmed-alfayed.nexorastudio-eg.com/blog/android-pdf-guide.html</loc>
-    <lastmod>2026-10-18</lastmod>
   </url>
   <url>
     <loc>https://ahmed-alfayed.nexorastudio-eg.com/blog/choose-android-app.html</loc>
-    <lastmod>2026-10-18</lastmod>
   </url>
   <url>
     <loc>https://ahmed-alfayed.nexorastudio-eg.com/blog/quran-reading-on-android.html</loc>
-    <lastmod>2026-10-18</lastmod>
   </url>
   <url>
     <loc>https://ahmed-alfayed.nexorastudio-eg.com/blog/verifying-hadith-sources.html</loc>
-    <lastmod>2026-10-18</lastmod>
   </url>
   <url>
     <loc>https://ahmed-alfayed.nexorastudio-eg.com/blog/ai-for-programming.html</loc>
-    <lastmod>2026-10-18</lastmod>
+  </url>
+  <url>
+    <loc>https://ahmed-alfayed.nexorastudio-eg.com/blog/javascript-guide.html</loc>
+    <lastmod>2026-11-09</lastmod>
+  </url>
+  <url>
+    <loc>https://ahmed-alfayed.nexorastudio-eg.com/blog/css-guide.html</loc>
+    <lastmod>2026-11-09</lastmod>
+  </url>
+  <url>
+    <loc>https://ahmed-alfayed.nexorastudio-eg.com/blog/html-guide.html</loc>
+    <lastmod>2026-11-09</lastmod>
   </url>
   <url>
     <loc>https://ahmed-alfayed.nexorastudio-eg.com/contact.html</loc>
   </url>
   <url>
     <loc>https://ahmed-alfayed.nexorastudio-eg.com/contact-en.html</loc>
+  </url>
+  <url>
+    <loc>https://ahmed-alfayed.nexorastudio-eg.com/privacy-policy.html</loc>
+    <lastmod>2026-11-09</lastmod>
+  </url>
+  <url>
+    <loc>https://ahmed-alfayed.nexorastudio-eg.com/privacy-policy-en.html</loc>
+    <lastmod>2026-11-09</lastmod>
   </url>
   <url>
     <loc>https://ahmed-alfayed.nexorastudio-eg.com/blog/gpt-6-astra.html</loc>

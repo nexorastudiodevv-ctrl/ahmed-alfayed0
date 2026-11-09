@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="تعلم HTML من الصفر بأمثلة عملية: هيكل الصفحة والعناوين والروابط والصور والقوائم والنماذج والعناصر الدلالية، مع دورة فيديو عربية ومصادر للتعلم." />
+    <meta name="author" content="Ahmed AlFayed" />
+    <meta name="robots" content="index, follow" />
+    <meta property="og:type" content="article" />
+    <meta property="og:locale" content="ar_EG" />
+    <meta property="og:title" content="تعلم HTML من الصفر: بناء أول صفحة ويب خطوة بخطوة" />
+    <meta property="og:description" content="دليل عملي لبناء صفحات الويب باستخدام HTML، مع أمثلة ودورة عربية يمكنك مشاهدتها داخل المقال." />
+    <meta property="og:url" content="https://ahmed-alfayed.nexorastudio-eg.com/blog/html-guide.html" />
+    <meta property="og:image" content="https://ahmed-alfayed.nexorastudio-eg.com/assets/html-guide-cover-design.png" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="1463" />
+    <meta property="og:image:height" content="768" />
+    <meta property="og:image:alt" content="غلاف دليل تعلم HTML من الصفر وبناء أول صفحة ويب خطوة بخطوة" />
+    <link rel="canonical" href="https://ahmed-alfayed.nexorastudio-eg.com/blog/html-guide.html" />
+    <link rel="alternate" hreflang="ar" href="https://ahmed-alfayed.nexorastudio-eg.com/blog/html-guide.html" />
+    <link rel="icon" type="image/png" href="../assets/ahmed-profile-icon-512.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../styles.css" />
+    <link rel="stylesheet" href="../app-pages.css" />
+    <link rel="stylesheet" href="blog.css" />
+    <link rel="stylesheet" href="article-media.css" />
+    <link rel="stylesheet" href="article-share.css" />
+    <title>تعلم HTML من الصفر: بناء أول صفحة ويب خطوة بخطوة | Nexora</title>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "تعلم HTML من الصفر: بناء أول صفحة ويب خطوة بخطوة",
+        "description": "شرح عملي لأساسيات HTML مع أمثلة ومصادر عربية ودورة فيديو مضمّنة.",
+        "image": "https://ahmed-alfayed.nexorastudio-eg.com/assets/html-guide-cover-design.png",
+        "datePublished": "2026-11-09",
+        "dateModified": "2026-11-09",
+        "inLanguage": "ar",
+        "author": {
+          "@type": "Person",
+          "name": "Ahmed AlFayed"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "Nexora Studio EG",
+          "url": "https://ahmed-alfayed.nexorastudio-eg.com/"
+        },
+        "mainEntityOfPage": "https://ahmed-alfayed.nexorastudio-eg.com/blog/html-guide.html"
+      }
+    </script>
+    <meta property="og:site_name" content="Ahmed AlFayed (Nexora Studio EG)" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="تعلم HTML من الصفر: بناء أول صفحة ويب خطوة بخطوة" />
+    <meta name="twitter:description" content="شرح عملي لأساسيات HTML مع أمثلة ومصادر عربية ودورة فيديو مضمّنة." />
+    <meta name="twitter:image" content="https://ahmed-alfayed.nexorastudio-eg.com/assets/html-guide-cover-design.png" />
+    <meta name="twitter:image:alt" content="غلاف دليل تعلم HTML من الصفر وبناء أول صفحة ويب خطوة بخطوة" />
+    <script defer src="article-share.js"></script>
+    <meta name="google-adsense-account" content="ca-pub-4360758752869014" />
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4360758752869014" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="../index.html" aria-label="العودة إلى موقع Nexora Studio EG"><img class="brand-logo" src="../assets/ahmed-profile-icon-512.png" alt="شعار Nexora Studio EG" width="768" height="768" decoding="async" /><span><strong>Ahmed AlFayed</strong><small>Nexora Studio EG · مطور مستقل</small></span></a>
+      <nav class="nav-links" aria-label="التنقل"><a href="../index.html#work">التطبيقات</a><a href="index.html">المدونة</a><a href="../contact.html">تواصل</a></nav>
+      <div class="header-actions"><a class="language-switch" href="index-en.html" lang="en" hreflang="en">English</a><a class="header-cta" href="index.html">كل المقالات <span>↗</span></a></div>
+    </header>
+    <main class="blog-article-main">
+      <nav class="blog-breadcrumb" aria-label="مسار الصفحة"><a href="../index.html">الرئيسية</a><span>/</span><a href="index.html">المدونة</a><span>/</span><span aria-current="page">البرمجة والتطوير</span></nav>
+      <article>
+        <header class="blog-article-header">
+          <div class="blog-card-meta"><span class="blog-category">البرمجة والتطوير · HTML</span><time datetime="2026-11-09">9 نوفمبر 2026</time></div>
+          <h1>تعلم HTML من الصفر: بناء أول صفحة ويب خطوة بخطوة</h1>
+          <p class="blog-article-summary">كل موقع يبدأ بمحتوى منظّم. في هذا الدليل ستتعلم كيف تكتب بنية صفحة HTML، وتضيف العناوين والروابط والصور والقوائم والنماذج، ثم تستخدم العناصر الدلالية لبناء صفحة واضحة وسهلة الوصول.</p>
+        </header>
+        <figure class="blog-article-figure blog-article-cover" data-article-cover>
+          <img src="../assets/html-guide-cover-design.png" alt="غلاف دليل تعلم HTML من الصفر وبناء أول صفحة ويب خطوة بخطوة" width="1463" height="768" fetchpriority="high" />
+          <figcaption>HTML تصف بنية المحتوى ومعناه؛ أما CSS فتحدد مظهره.</figcaption>
+        </figure>
+        <div class="blog-article-content">
+          <p>إذا فتحت صفحة ويب، فالعناوين والفقرات والصور والروابط التي تراها لها بنية يقرأها المتصفح. لغة HTML هي اللغة القياسية لوصف هذه البنية. لا تحتاج إلى خبرة برمجية سابقة لتبدأ؛ يكفي محرر نصوص ومتصفح، ثم تتعلم بإضافة عنصر وتجربة النتيجة.</p>
+
+          <h2>ما HTML؟</h2>
+          <p>HTML اختصار لـ HyperText Markup Language، أي لغة ترميز النص التشعبي. هي ليست لغة برمجة بالمعنى المعتاد؛ بل تستخدم عناصر وعلامات لوصف أجزاء المحتوى. تتعاون مع CSS لتنسيق الصفحة ومع JavaScript لإضافة السلوك والتفاعل.</p>
+          <p>غالبًا يتكون العنصر من وسم بداية ومحتوى ووسم نهاية. مثلًا، <code>&lt;p&gt;</code> يحدد فقرة و<code>&lt;/p&gt;</code> ينهيها. توجد عناصر فارغة لا تحتاج إلى وسم إغلاق منفصل، مثل <code>&lt;img&gt;</code>.</p>
+
+          <h2>ابدأ بهيكل صفحة HTML</h2>
+          <p>أنشئ ملفًا باسم <code>index.html</code> واكتب الهيكل الأساسي. يخبر <code>&lt;!doctype html&gt;</code> المتصفح باستخدام HTML الحديثة، ويحتوي <code>&lt;head&gt;</code> على معلومات الصفحة، بينما يحتوي <code>&lt;body&gt;</code> على المحتوى الظاهر.</p>
+          <figure class="blog-article-figure">
+            <img src="../assets/html-structure-example.png" alt="مثال مرئي على هيكل صفحة HTML مع lang وdir وhead وbody" width="1082" height="768" loading="lazy" />
+            <figcaption>الهيكل الأساسي يحدد لغة الصفحة واتجاهها ومعلوماتها ومحتواها الظاهر.</figcaption>
+          </figure>
+          <p>تحدد الخاصية <code>lang</code> لغة المحتوى، وتضبط <code>dir</code> اتجاه الكتابة. وتساعد قيمة <code>viewport</code> صفحات الهاتف على استخدام عرض الشاشة الصحيح.</p>
+
+          <h2>العناوين والفقرات والنصوص</h2>
+          <p>استخدم العناوين من <code>&lt;h1&gt;</code> إلى <code>&lt;h6&gt;</code> بحسب ترتيب المحتوى، لا لمجرد تكبير الخط. غالبًا يكون للصفحة عنوان رئيسي واحد، تتبعه عناوين فرعية مرتبة. أما الفقرة فتكتب داخل <code>&lt;p&gt;</code>.</p>
+          <figure class="blog-article-figure">
+            <img src="../assets/html-headings-example.png" alt="مثال على تنظيم محتوى HTML باستخدام العناوين h1 وh2 والفقرات" width="1738" height="768" loading="lazy" />
+            <figcaption>رتّب العناوين حسب بنية المحتوى، لا لمجرد تغيير حجم الخط.</figcaption>
+          </figure>
+          <p>للتأكيد الدلالي استخدم <code>&lt;strong&gt;</code> للأهمية و<code>&lt;em&gt;</code> للتشديد، بدل اختيار عنصر اعتمادًا على شكله المرئي فقط.</p>
+
+          <h2>الروابط والصور</h2>
+          <p>ينشئ عنصر <code>&lt;a&gt;</code> رابطًا، وتحدد الخاصية <code>href</code> وجهته. أضف نصًا مفهومًا للرابط ليعرف الزائر أين سيذهب. وتعرض <code>&lt;img&gt;</code> صورة؛ أما النص البديل <code>alt</code> فيصف معناها عند تعذر تحميلها أو عند استخدام قارئ شاشة.</p>
+          <figure class="blog-article-figure">
+            <img src="../assets/html-links-images-example.png" alt="مثال HTML على إنشاء رابط باستخدام href وإضافة صورة مع وصف alt" width="1600" height="768" loading="lazy" />
+            <figcaption>اكتب وجهة الرابط في <code>href</code> ووصفًا مفيدًا للصورة في <code>alt</code>.</figcaption>
+          </figure>
+          <p>لا تكتب وصفًا عامًا مثل «صورة» في <code>alt</code>؛ صف ما يحتاج القارئ إلى معرفته. وإذا كانت الصورة زخرفية بحتة ولا تضيف معنى، يمكن ترك الوصف فارغًا: <code>alt=""</code>.</p>
+
+          <h2>القوائم والجداول</h2>
+          <p>استخدم <code>&lt;ul&gt;</code> لقائمة غير مرتبة، و<code>&lt;ol&gt;</code> لخطوات ينبغي اتباع ترتيبها. يحتوي كل منهما على عناصر <code>&lt;li&gt;</code>.</p>
+          <figure class="blog-article-figure">
+            <img src="../assets/html-lists-example.png" alt="مثال على قائمة HTML غير مرتبة ul وقائمة خطوات مرتبة ol" width="1082" height="768" loading="lazy" />
+            <figcaption>اختر <code>ul</code> للقوائم غير المرتبة و<code>ol</code> للخطوات التي يهم ترتيبها.</figcaption>
+          </figure>
+          <p>استخدم الجدول للبيانات المترابطة في صفوف وأعمدة، لا لترتيب شكل الصفحة. أضف عناوين واضحة للخلايا باستخدام <code>&lt;th&gt;</code>.</p>
+          <figure class="blog-article-figure">
+            <img src="../assets/html-tables-example.png" alt="مثال جدول HTML بعناوين أعمدة ومحتوى داخل thead وtbody" width="1213" height="768" loading="lazy" />
+            <figcaption>استخدم الجدول للبيانات، مع تسمية وعناوين واضحة للأعمدة.</figcaption>
+          </figure>
+
+          <h2>النماذج: استقبال بيانات المستخدم</h2>
+          <p>تجمع النماذج مدخلات المستخدم. اربط كل حقل بعنصر <code>&lt;label&gt;</code>؛ فالاعتماد على النص النائب وحده لا يكفي، لأنه يختفي عند الكتابة ولا يقدم تسمية ثابتة.</p>
+          <figure class="blog-article-figure">
+            <img src="../assets/html-forms-example.png" alt="مثال نموذج HTML يحتوي تسميات مرتبطة بحقول الاسم والبريد الإلكتروني وزر إرسال" width="1213" height="768" loading="lazy" />
+            <figcaption>اربط كل تسمية بالحقل المقابل لها، وتذكّر أن إرسال البيانات يحتاج إلى خادم أو خدمة.</figcaption>
+          </figure>
+          <p>تحدد <code>action</code> وجهة إرسال البيانات و<code>method</code> طريقة الطلب. المثال يوضح البنية فقط؛ معالجة البيانات تتطلب خادمًا أو خدمة مناسبة، ولا يرسل هذا النموذج البيانات بمجرد نسخه كما هو.</p>
+
+          <h2>استخدم العناصر الدلالية</h2>
+          <p>العناصر الدلالية تصف دور أجزاء الصفحة للمتصفح وأدوات المساعدة ومحركات البحث. بدل وضع كل المحتوى داخل عناصر عامة، استخدم عناصر مثل <code>&lt;header&gt;</code> و<code>&lt;nav&gt;</code> و<code>&lt;main&gt;</code> و<code>&lt;article&gt;</code> و<code>&lt;footer&gt;</code> عندما تناسب معنى المحتوى.</p>
+          <figure class="blog-article-figure">
+            <img src="../assets/html-semantic-example.png" alt="مثال عناصر HTML الدلالية header وnav وmain وarticle وfooter" width="852" height="768" loading="lazy" />
+            <figcaption>اختر العناصر الدلالية بحسب معنى كل جزء من الصفحة.</figcaption>
+          </figure>
+
+          <h2>طبّق: أنشئ صفحة تعريف بسيطة</h2>
+          <p>أنشئ صفحة بعنوان «من أنا»، واكتب فقرة قصيرة عنك، وقائمة بمهاراتك، ورابطًا إلى مشروعك. جرّب إضافة صورة مناسبة مع وصف بديل، ثم رتّب المحتوى بعناصر دلالية. بعد ذلك افتح الملف في المتصفح وعدّل الشيفرة ولاحظ النتيجة.</p>
+
+          <h2>دورة HTML بالفيديو داخل المقال</h2>
+          <p>شاهد قائمة <strong>Learn HTML In Arabic 2021</strong> من Elzero Web School مباشرةً من المشغّل أدناه. يمكنك اختيار الدروس من قائمة التشغيل داخل YouTube المضمّن دون مغادرة المقال. يلزم اتصال بالإنترنت، وقد تمنع إعدادات المتصفح أو الشبكة تشغيل التضمين.</p>
+          <div class="blog-video">
+            <iframe
+              src="https://www.youtube-nocookie.com/embed/videoseries?list=PLDoPjvoNmBAw_t_XWUFbBX-c9MafPk9ji&amp;hl=ar"
+              title="دورة Learn HTML In Arabic 2021 من Elzero Web School"
+              loading="lazy"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <p class="blog-video-fallback">إذا لم يظهر المشغّل، <a href="https://www.youtube.com/playlist?list=PLDoPjvoNmBAw_t_XWUFbBX-c9MafPk9ji" target="_blank" rel="noopener noreferrer">افتح دورة Elzero HTML 2021 على YouTube</a>. سيؤدي الرابط البديل إلى YouTube خارج الموقع.</p>
+
+          <h2>مصادر عربية ومرجعية</h2>
+          <ul class="blog-source-list">
+            <li><a href="https://www.youtube.com/playlist?list=PLDoPjvoNmBAw_t_XWUFbBX-c9MafPk9ji" target="_blank" rel="noopener noreferrer">Learn HTML In Arabic 2021 — Elzero Web School</a>: قائمة تشغيل محددة لتعلم HTML بالعربية.</li>
+            <li><a href="https://academy.hsoub.com/programming/html/" target="_blank" rel="noopener noreferrer">أكاديمية حسوب: HTML</a>: مقالات عربية عن عناصر HTML والنماذج وبناء صفحات الويب.</li>
+            <li><a href="https://academy.hsoub.com/programming/html/%D8%A3%D8%B3%D8%A7%D8%B3%D9%8A%D8%A7%D8%AA-%D8%A5%D9%86%D8%B4%D8%A7%D8%A1-%D9%85%D9%88%D9%82%D8%B9-%D9%88%D9%8A%D8%A8-%D8%A8%D8%A7%D8%B3%D8%AA%D8%AE%D8%AF%D8%A7%D9%85-%D8%AA%D8%B9%D9%84%D9%8A%D9%85%D8%A7%D8%AA-html-r1894/" target="_blank" rel="noopener noreferrer">أساسيات إنشاء موقع ويب باستخدام تعليمات HTML — أكاديمية حسوب</a>: سلسلة تطبيقية تبدأ بإنشاء مشروع HTML.</li>
+            <li><a href="https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Structuring_content" target="_blank" rel="noopener noreferrer">مسار تعلم HTML من MDN</a>: مرجع شامل للمبتدئين باللغة الإنجليزية عن البنية والعناوين والروابط والصور والنماذج.</li>
+            <li><a href="https://validator.w3.org/" target="_blank" rel="noopener noreferrer">مدقق HTML من W3C</a>: أداة لفحص ترميز الصفحة واكتشاف أخطاء البنية.</li>
+          </ul>
+
+          <h2>الخلاصة</h2>
+          <p>ابدأ ببنية صحيحة، واختر العنصر وفق معنى المحتوى، واكتب روابط وأوصاف صور واضحة. تدرب على صفحة صغيرة ثم تحقق من عملها في المتصفح ومدقق HTML. وبعد أن تثبت أساس HTML، انتقل إلى CSS للتنسيق وJavaScript لإضافة التفاعل.</p>
+          <footer class="blog-post-footer"><a href="css-guide.html">تعلم CSS من الصفر</a><a href="javascript-guide.html">تعلم JavaScript من الصفر</a><a href="index.html">كل مقالات البرمجة والتطوير</a></footer>
+        </div>
+      </article>
+    </main>
+    <footer class="site-footer"><span>© 2026 Ahmed AlFayed (Nexora Studio EG)</span><a href="../index.html">العودة إلى الموقع ↑</a></footer>
+  </body>
+</html>

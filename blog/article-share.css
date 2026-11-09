@@ -1,0 +1,131 @@
+.blog-article-share {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  flex-wrap: wrap;
+  padding: 18px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.blog-article-cover {
+  margin: 24px auto 0;
+}
+
+.blog-article-cover img {
+  width: 100%;
+}
+
+.blog-article-share h2 {
+  margin: 0;
+  font-size: 13px;
+}
+
+.blog-article-share-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.blog-article-share-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 38px;
+  padding: 7px 12px;
+  border: 1px solid var(--line);
+  border-radius: 5px;
+  background: #eeece3;
+  color: var(--ink);
+  font: 600 12px Cairo, Arial, sans-serif;
+  text-decoration: none !important;
+  cursor: pointer;
+  transition: background-color .18s ease, border-color .18s ease;
+}
+
+.blog-article-share-link:hover {
+  border-color: #829b83;
+  background: #dce5d9;
+}
+
+.blog-article-share-brand {
+  width: 40px;
+  min-width: 40px;
+  height: 40px;
+  padding: 8px;
+  border: 0;
+  border-radius: 50%;
+  color: #fff;
+}
+
+.blog-article-share-brand svg {
+  display: block;
+  width: 22px;
+  height: 22px;
+  fill: currentColor;
+}
+
+.blog-article-share-whatsapp {
+  background: #25d366;
+}
+
+.blog-article-share-whatsapp:hover {
+  background: #1da851;
+}
+
+.blog-article-share-facebook {
+  background: #0866ff;
+}
+
+.blog-article-share-facebook:hover {
+  background: #0756d6;
+}
+
+.blog-article-share-telegram {
+  background: #24a1de;
+}
+
+.blog-article-share-telegram:hover {
+  background: #1687be;
+}
+
+.blog-article-share-x {
+  background: #000;
+}
+
+.blog-article-share-x:hover {
+  background: #333;
+}
+
+.blog-article-share-link:focus-visible {
+  outline: 3px solid #829b83;
+  outline-offset: 2px;
+}
+
+.blog-article-share-status {
+  flex-basis: 100%;
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.blog-article-share-status:empty {
+  display: none;
+}
+
+@media (max-width: 520px) {
+  .blog-article-share {
+    align-items: flex-start;
+  }
+
+  .blog-article-share-actions {
+    width: 100%;
+  }
+
+  .blog-article-share-link {
+    flex: 1 1 auto;
+  }
+
+  .blog-article-share-brand {
+    flex: 0 0 40px;
+  }
+}

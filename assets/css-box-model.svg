@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="500" viewBox="0 0 1200 500" role="img" aria-labelledby="title description">
+  <title id="title">CSS box model</title>
+  <desc id="description">Nested rectangles label margin, border, padding, and content from outside to inside.</desc>
+  <rect width="1200" height="500" rx="24" fill="#f1f0e8"/>
+  <text x="600" y="56" fill="#26342b" font-family="Arial,sans-serif" font-size="26" font-weight="700" text-anchor="middle">CSS box model</text>
+  <rect x="118" y="92" width="964" height="340" rx="18" fill="#e5e2d5" stroke="#cfcbbd" stroke-width="2"/>
+  <text x="600" y="128" fill="#5f6457" font-family="Arial,sans-serif" font-size="20" font-weight="700" text-anchor="middle">MARGIN · space outside the border</text>
+  <rect x="232" y="151" width="736" height="244" rx="14" fill="#d7bd85" stroke="#c7a86a" stroke-width="2"/>
+  <text x="600" y="187" fill="#443b2c" font-family="Arial,sans-serif" font-size="19" font-weight="700" text-anchor="middle">BORDER</text>
+  <rect x="321" y="208" width="558" height="150" rx="12" fill="#c9ddbd" stroke="#9bb68a" stroke-width="2"/>
+  <text x="600" y="242" fill="#384735" font-family="Arial,sans-serif" font-size="18" font-weight="700" text-anchor="middle">PADDING · space inside the border</text>
+  <rect x="453" y="264" width="294" height="65" rx="10" fill="#fffdf8" stroke="#d8ddd2" stroke-width="2"/>
+  <text x="600" y="304" fill="#26342b" font-family="Arial,sans-serif" font-size="21" font-weight="700" text-anchor="middle">CONTENT</text>
+</svg>

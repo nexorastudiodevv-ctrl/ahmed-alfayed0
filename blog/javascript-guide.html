@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="دليل مبسط لتعلم JavaScript للمبتدئين: المتغيرات والدوال والشروط والمصفوفات والتعامل مع صفحة الويب، مع أمثلة عملية ومصادر عربية وفيديوهات." />
+    <meta name="author" content="Ahmed AlFayed" />
+    <meta name="robots" content="index, follow" />
+    <meta property="og:type" content="article" />
+    <meta property="og:locale" content="ar_EG" />
+    <meta property="og:title" content="تعلم JavaScript من الصفر: دليل عملي للمبتدئين" />
+    <meta property="og:description" content="تعرف على أساسيات JavaScript وكيف تضيف التفاعل إلى صفحات الويب، مع أمثلة قابلة للتجربة ومصادر تعليمية عربية." />
+    <meta property="og:url" content="https://ahmed-alfayed.nexorastudio-eg.com/blog/javascript-guide.html" />
+    <meta property="og:image" content="https://ahmed-alfayed.nexorastudio-eg.com/assets/javascript-guide-cover-design.png" />
+    <meta property="og:image:alt" content="غلاف مقال تعلم JavaScript من الصفر مع مثال برمجي وتصميم عربي للمبتدئين" />
+    <link rel="canonical" href="https://ahmed-alfayed.nexorastudio-eg.com/blog/javascript-guide.html" />
+    <link rel="alternate" hreflang="ar" href="https://ahmed-alfayed.nexorastudio-eg.com/blog/javascript-guide.html" />
+    <link rel="icon" type="image/png" href="../assets/ahmed-profile-icon-512.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../styles.css" />
+    <link rel="stylesheet" href="../app-pages.css" />
+    <link rel="stylesheet" href="blog.css" />
+    <link rel="stylesheet" href="article-media.css" />
+    <title>تعلم JavaScript من الصفر: دليل عملي للمبتدئين | Nexora</title>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "تعلم JavaScript من الصفر: دليل عملي للمبتدئين",
+        "description": "شرح مبسط لأساسيات JavaScript والتعامل مع صفحة الويب، مع أمثلة عملية ومصادر عربية وفيديوهات.",
+        "image": "https://ahmed-alfayed.nexorastudio-eg.com/assets/javascript-guide-cover-design.png",
+        "datePublished": "2026-11-09",
+        "dateModified": "2026-11-09",
+        "inLanguage": "ar",
+        "author": {
+          "@type": "Person",
+          "name": "Ahmed AlFayed"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "Nexora Studio EG",
+          "url": "https://ahmed-alfayed.nexorastudio-eg.com/"
+        },
+        "mainEntityOfPage": "https://ahmed-alfayed.nexorastudio-eg.com/blog/javascript-guide.html"
+      }
+    </script>
+    <meta property="og:site_name" content="Ahmed AlFayed (Nexora Studio EG)" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="تعلم JavaScript من الصفر: دليل عملي للمبتدئين" />
+    <meta name="twitter:description" content="أساسيات JavaScript بأمثلة عملية، مع روابط مصادر عربية ودروس فيديو للمبتدئين." />
+    <meta name="twitter:image" content="https://ahmed-alfayed.nexorastudio-eg.com/assets/javascript-guide-cover-design.png" />
+    <meta name="twitter:image:alt" content="غلاف مقال تعلم JavaScript من الصفر مع مثال برمجي وتصميم عربي للمبتدئين" />
+    <link rel="stylesheet" href="article-share.css" />
+    <script defer src="article-share.js"></script>
+    <meta name="google-adsense-account" content="ca-pub-4360758752869014" />
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4360758752869014" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="../index.html" aria-label="العودة إلى موقع Nexora Studio EG"><img class="brand-logo" src="../assets/ahmed-profile-icon-512.png" alt="شعار Nexora Studio EG" width="768" height="768" decoding="async" /><span><strong>Ahmed AlFayed</strong><small>Nexora Studio EG · مطور مستقل</small></span></a>
+      <nav class="nav-links" aria-label="التنقل"><a href="../index.html#work">التطبيقات</a><a href="index.html">المدونة</a><a href="../contact.html">تواصل</a></nav>
+      <div class="header-actions"><a class="language-switch" href="index-en.html" lang="en" hreflang="en">English</a><a class="header-cta" href="index.html">كل المقالات <span>↗</span></a></div>
+    </header>
+    <main class="blog-article-main">
+      <nav class="blog-breadcrumb" aria-label="مسار الصفحة"><a href="../index.html">الرئيسية</a><span>/</span><a href="index.html">المدونة</a><span>/</span><span aria-current="page">البرمجة والتطوير</span></nav>
+      <article>
+        <header class="blog-article-header">
+          <div class="blog-card-meta"><span class="blog-category">البرمجة والتطوير · JavaScript</span><time datetime="2026-11-09">9 نوفمبر 2026</time></div>
+          <h1>تعلم JavaScript من الصفر: دليل عملي للمبتدئين</h1>
+          <p class="blog-article-summary">تريد أن تجعل صفحة الويب تتفاعل مع الزائر؟ يشرح هذا الدليل أساسيات JavaScript خطوة بخطوة، من المتغيرات والشروط إلى التعامل مع عناصر الصفحة، مع أمثلة عملية وروابط عربية للتعلم.</p>
+        </header>
+        <div class="blog-article-content">
+          <figure class="blog-article-figure">
+            <img src="../assets/javascript-guide-cover-design.png" alt="غلاف مقال JavaScript يوضح تعلم البرمجة والتفاعل مع واجهات الويب" width="1463" height="768" fetchpriority="high" />
+            <figcaption>JavaScript هي اللغة التي تضيف السلوك والتفاعل إلى واجهات الويب.</figcaption>
+          </figure>
+          <p>إذا سبق أن فتحت موقعًا وظهرت لك قائمة تتفاعل مع النقر، أو نموذج يتحقق من البيانات، أو نتائج تتحدث دون إعادة تحميل الصفحة، فغالبًا هناك JavaScript تعمل في الخلفية. في هذا الدليل سنبني فهمًا عمليًا للمفاهيم الأساسية، من دون افتراض خبرة سابقة في البرمجة.</p>
+
+          <h2>ما JavaScript؟ وهل هي نفسها Java؟</h2>
+          <p>JavaScript لغة برمجة متعددة الاستخدامات، وتُستخدم في المتصفح لإضافة السلوك إلى صفحات الويب. فـ HTML يحدد محتوى الصفحة وبنيتها، وCSS ينسق مظهرها، بينما تستطيع JavaScript الاستجابة للأحداث وتحديث المحتوى والتواصل مع خدمات الويب. ويمكن تشغيلها أيضًا خارج المتصفح، مثلًا عبر بيئة Node.js.</p>
+          <p>JavaScript ليست Java؛ الاسمان متشابهان لكنهما لغتان مختلفتان. ومن المفيد أيضًا التمييز بين اللغة نفسها وواجهات المتصفح: فالـ DOM، مثلًا، واجهة تتيح للكود التعامل مع عناصر صفحة HTML، وليست جزءًا من صياغة اللغة الأساسية.</p>
+
+          <h2>المتغيرات وأنواع البيانات</h2>
+          <p>المتغير اسم لقيمة تحتاج إلى استخدامها لاحقًا. استخدم <code>const</code> عندما لن تعيد إسناد قيمة جديدة إلى المتغير، و<code>let</code> عندما تحتاج فعلًا إلى إعادة الإسناد. تجنب <code>var</code> في الشيفرة الجديدة إلا عند التعامل مع كود قديم.</p>
+          <figure class="blog-article-figure">
+            <img src="../assets/javascript-variables-example.png" alt="مثال مرئي على const وlet وأنواع البيانات في JavaScript" width="1481" height="768" loading="lazy" />
+            <figcaption>المتغيرات وأنواع البيانات: ثوابت ومتغيرات ونصوص ومصفوفة وكائن.</figcaption>
+          </figure>
+          <p>من الأنواع الشائعة: النصوص مثل <code>"مرحبا"</code>، والأرقام، والقيم المنطقية <code>true</code> و<code>false</code>، والقيمة غير المعرّفة <code>undefined</code>، والقيمة الفارغة المقصودة <code>null</code>، إضافة إلى الكائنات والمصفوفات. لاحظ أن <code>const</code> يمنع إعادة إسناد المتغير، لكنه لا يجعل محتويات كائن أو مصفوفة ثابتة تلقائيًا.</p>
+
+          <h2>الشروط والمقارنة والتكرار</h2>
+          <p>تسمح الشروط بتنفيذ مسار مختلف بحسب قيمة ما. استخدم المقارنة الصارمة <code>===</code> افتراضيًا، لأنها تقارن القيمة ونوعها معًا، بدل الاعتماد على تحويل الأنواع الضمني.</p>
+          <figure class="blog-article-figure">
+            <img src="../assets/javascript-conditions-example.png" alt="مثال شرط if وelse للتحقق من درجة الاختبار في JavaScript" width="1481" height="768" loading="lazy" />
+            <figcaption>ينفذ الشرط مسارًا مختلفًا بحسب قيمة الدرجة.</figcaption>
+          </figure>
+          <p>وعندما تريد المرور على مجموعة من العناصر، استخدم حلقة مناسبة. مثلًا، يمر <code>for...of</code> على قيم المصفوفة مباشرة:</p>
+          <figure class="blog-article-figure">
+            <img src="../assets/javascript-loops-example.png" alt="حلقة for...of تمر على عناصر مصفوفة المهام في JavaScript" width="1881" height="768" loading="lazy" />
+            <figcaption>تكرار المهام واحدة تلو الأخرى باستخدام <code>for...of</code>.</figcaption>
+          </figure>
+
+          <h2>الدوال: اجمع الخطوات في عمل قابل لإعادة الاستخدام</h2>
+          <p>الدالة كتلة منطقية تنفذ مهمة، وقد تستقبل مدخلات وتعيد نتيجة. تسمية الوظيفة ومدخلاتها بوضوح تجعل الكود أسهل في القراءة والاختبار.</p>
+          <figure class="blog-article-figure">
+            <img src="../assets/javascript-functions-example.png" alt="تعريف دالة greet في JavaScript واستدعاؤها لإرجاع رسالة ترحيب" width="1719" height="768" loading="lazy" />
+            <figcaption>تستقبل الدالة اسمًا وتعيد رسالة ترحيب قابلة لإعادة الاستخدام.</figcaption>
+          </figure>
+          <p>يمكن كتابة الدوال أيضًا بصيغة السهم، وهي شائعة في callbacks:</p>
+          <figure class="blog-article-figure">
+            <img src="../assets/javascript-arrow-functions-example.png" alt="دالة سهمية تضاعف الرقم أربعة وتعرض الناتج ثمانية" width="2400" height="704" loading="lazy" />
+            <figcaption>صيغة مختصرة لدالة سهمية تعيد ضعف الرقم.</figcaption>
+          </figure>
+
+          <h2>ربط JavaScript بصفحة الويب</h2>
+          <p>هذا مثال صغير: نبحث عن الزر والنص باستخدام <code>querySelector</code>، ثم نضيف مستمعًا لحدث النقر. عند النقر، تتغير رسالة الصفحة باستخدام <code>textContent</code>.</p>
+          <figure class="blog-article-figure">
+            <img src="../assets/javascript-dom-example.png" alt="مثال يربط زر HTML بكود JavaScript لتحديث رسالة الصفحة عند النقر" width="1143" height="768" loading="lazy" />
+            <figcaption>يربط المثال زر الصفحة بمستمع النقر ثم يحدّث النص بأمان.</figcaption>
+          </figure>
+          <p>جرّب تغيير نص الزر أو الرسالة. وعند إدراج نص يأتي من المستخدم، فضّل <code>textContent</code> على <code>innerHTML</code> ما لم تكن بحاجة فعلية إلى تفسير HTML؛ فالتعامل الآمن مع المدخلات مهم لتجنب إدخال محتوى غير موثوق في الصفحة.</p>
+
+          <figure class="blog-article-figure">
+            <img src="../assets/javascript-dom-flow-design.png" alt="مخطط يوضح حدث المستخدم ثم تنفيذ JavaScript ثم تحديث الواجهة" width="2094" height="768" loading="lazy" />
+            <figcaption>التدفق المبسط: حدث من المستخدم، ثم شيفرة JavaScript، ثم تحديث للواجهة.</figcaption>
+          </figure>
+
+          <h2>التعامل مع البيانات والعمليات غير المتزامنة</h2>
+          <p>تسمح المصفوفات بحفظ قائمة قيم، والكائنات بجمع خصائص مرتبطة بشيء واحد. كما تُستخدم الدوال المساعدة مثل <code>map</code> و<code>filter</code> لإنشاء قائمة جديدة أو اختيار عناصر تحقق شرطًا معينًا.</p>
+          <p>قد تحتاج صفحتك إلى طلب بيانات من خادم. هذا الطلب غير متزامن؛ لذلك تستخدم JavaScript الوعود و<code>async/await</code> لكتابة الكود بطريقة واضحة، مع الانتباه إلى معالجة الأخطاء والتحقق من نتيجة الاستجابة.</p>
+          <figure class="blog-article-figure">
+            <img src="../assets/javascript-async-example.png" alt="مثال async وawait لجلب المقالات والتحقق من الاستجابة ومعالجة الأخطاء" width="1026" height="768" loading="lazy" />
+            <figcaption>مثال على جلب البيانات بطريقة غير متزامنة مع معالجة الأخطاء.</figcaption>
+          </figure>
+          <p>المسار <code>/api/posts</code> في المثال توضيحي، ويجب استبداله بعنوان خدمة حقيقي. تذكّر أن نجاح طلب الشبكة لا يعني بالضرورة أن الخادم أعاد حالة نجاح؛ لذلك نفحص <code>response.ok</code> أيضًا.</p>
+
+          <h2>كيف تتعلم JavaScript بطريقة عملية؟</h2>
+          <ol>
+            <li>تأكد من فهم أساسيات HTML وCSS؛ ليس مطلوبًا إتقانهما قبل البدء، لكنهما يساعدانك على رؤية أثر JavaScript في الصفحة.</li>
+            <li>تعلم موضوعًا واحدًا في كل مرة: المتغيرات، أنواع البيانات، الشروط، الدوال، المصفوفات، ثم DOM والأحداث.</li>
+            <li>اكتب الأمثلة بنفسك، ثم غيّرها عمدًا ولاحظ ما يتغير. القراءة وحدها لا تكفي لترسيخ المفاهيم.</li>
+            <li>ابنِ مشاريع صغيرة مثل عداد، قائمة مهام، أو نموذج يتحقق من مدخلات المستخدم.</li>
+            <li>افتح أدوات المطور في المتصفح واقرأ رسائل وحدة التحكم. الخطأ جزء طبيعي من التعلم، ورسالة الخطأ غالبًا بداية جيدة للبحث.</li>
+            <li>بعد الأساسيات، انتقل إلى الوحدات Modules، والوعود Promises، وواجهات الويب، ثم اختر إطار عمل حسب احتياج مشروعك.</li>
+          </ol>
+          <aside class="blog-callout">لا تبدأ بحفظ إطار عمل قبل فهم الأساسيات. عندما تستطيع قراءة القيم والشروط والدوال والأحداث وتتبع خطأ بسيط، ستكون أدوات مثل React أو Vue أسهل بكثير.</aside>
+
+          <h2>شاهد دورة JavaScript داخل المقال</h2>
+          <p>يمكنك تشغيل قائمة دورة <strong>Learn JavaScript in Arabic 2021</strong> من Elzero Web School مباشرةً هنا، والتنقل بين دروسها من مشغّل YouTube دون مغادرة المقال.</p>
+          <div class="blog-video">
+            <iframe
+              src="https://www.youtube-nocookie.com/embed/videoseries?list=PLDoPjvoNmBAx3kiplQR_oeDqLDBUDYwVv&amp;hl=ar"
+              title="دورة Learn JavaScript in Arabic 2021 من Elzero Web School"
+              loading="lazy"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <p class="blog-video-fallback">إذا لم يظهر المشغّل أو منعت إعدادات المتصفح تشغيله، <a href="https://www.youtube.com/playlist?list=PLDoPjvoNmBAx3kiplQR_oeDqLDBUDYwVv" target="_blank" rel="noopener noreferrer">افتح دورة JavaScript مباشرةً على YouTube</a>. قد يعتمد التشغيل المضمّن على اتصال الإنترنت وتوفر الفيديو وإعدادات الخصوصية في المتصفح.</p>
+
+          <h2>مصادر عربية وروابط فيديو للتعلم</h2>
+          <p>هذه مصادر إضافية للمذاكرة والتطبيق. ترتيبها مقترح وليس شرطًا؛ اختر مصدرًا واحدًا للبدء واكتب الكود بالتوازي بدل التنقل بين دورات كثيرة.</p>
+          <ul class="blog-source-list">
+            <li><a href="https://ar.javascript.info/" target="_blank" rel="noopener noreferrer">JavaScript.info بالعربية</a> — كتاب تعليمي متدرج يبدأ من الأساسيات ويتوسع إلى موضوعات اللغة المتقدمة.</li>
+            <li><a href="https://academy.hsoub.com/programming/javascript/" target="_blank" rel="noopener noreferrer">أكاديمية حسوب: مقالات جافاسكربت</a> — دروس عربية ومقالات عن JavaScript وما يرتبط بها من تقنيات.</li>
+            <li><a href="https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Scripting" target="_blank" rel="noopener noreferrer">دليل MDN للمبتدئين</a> — مسار رسمي موثوق لتعلم البرمجة النصية في الويب؛ هذه الصفحة متاحة بالإنجليزية.</li>
+            <li><a href="https://www.youtube.com/playlist?list=PLDoPjvoNmBAx3kiplQR_oeDqLDBUDYwVv" target="_blank" rel="noopener noreferrer">دورة Learn JavaScript in Arabic 2021 — Elzero Web School</a> — قائمة تشغيل محددة للدورة، ويمكن فتحها مباشرة على YouTube عند الحاجة.</li>
+          </ul>
+
+          <h2>الخلاصة</h2>
+          <p>JavaScript تمنح صفحات الويب القدرة على الاستجابة والتفاعل، وتبدأ رحلتك بفهم القيم والمتغيرات والشروط والدوال، ثم تطبيق هذه المفاهيم على عناصر الصفحة والأحداث والبيانات. خذ كل فكرة إلى مثال صغير، وافحص النتيجة في المتصفح، وارجع إلى المصادر الموثوقة كلما احتجت إلى توضيح.</p>
+          <footer class="blog-post-footer"><a href="ai-for-programming.html">كيف تستخدم الذكاء الاصطناعي في البرمجة؟</a><a href="index.html">كل مقالات البرمجة والتطوير</a><a href="../index.html#work">تطبيقات Nexora</a></footer>
+        </div>
+      </article>
+    </main>
+    <footer class="site-footer"><span>© 2026 Ahmed AlFayed (Nexora Studio EG)</span><a href="../index.html">العودة إلى الموقع ↑</a></footer>
+  </body>
+</html>
