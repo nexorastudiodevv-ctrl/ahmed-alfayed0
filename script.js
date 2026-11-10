@@ -108,6 +108,23 @@ if ("serviceWorker" in navigator && window.isSecureContext) {
   }
 }
 
+const loadAdsAfterIdle = () => {
+  if (window.__nexoraAdsLoaded) return;
+  window.__nexoraAdsLoaded = true;
+
+  const script = document.createElement("script");
+  script.src = "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4360758752869014";
+  script.async = true;
+  script.crossOrigin = "anonymous";
+  document.head.appendChild(script);
+};
+
+if ("requestIdleCallback" in window) {
+  requestIdleCallback(loadAdsAfterIdle, { timeout: 2000 });
+} else {
+  window.setTimeout(loadAdsAfterIdle, 1800);
+}
+
 const installButton = document.querySelector("[data-pwa-install]");
 let installPrompt;
 
