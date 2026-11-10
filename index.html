@@ -78,16 +78,20 @@
         }
       }
     </script>
+    <link rel="dns-prefetch" href="//fonts.googleapis.com" />
+    <link rel="dns-prefetch" href="//fonts.gstatic.com" />
+    <link rel="dns-prefetch" href="//pagead2.googlesyndication.com" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://pagead2.googlesyndication.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="app-pages.css" />
-    <link rel="stylesheet" href="pwa.css" />
-    <link rel="stylesheet" href="phone-carousel.css" />
-    <link rel="stylesheet" href="home-responsive.css" />
+    <link rel="stylesheet" href="app-pages.css" media="print" onload="this.media='all'" />
+    <link rel="stylesheet" href="pwa.css" media="print" onload="this.media='all'" />
+    <link rel="stylesheet" href="phone-carousel.css" media="print" onload="this.media='all'" />
+    <link rel="stylesheet" href="home-responsive.css" media="print" onload="this.media='all'" />
     <meta name="google-adsense-account" content="ca-pub-4360758752869014" />
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4360758752869014" crossorigin="anonymous"></script>
+    <script defer src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4360758752869014" crossorigin="anonymous"></script>
   </head>
   <body>
     <header class="site-header">
@@ -127,9 +131,9 @@
           <div class="phone">
             <div class="phone-notch"></div>
             <div class="phone-screen phone-screen-carousel" data-phone-carousel aria-label="لقطات شاشة التطبيقات" aria-live="off">
-              <img class="phone-preview is-active" src="assets/quran-screen.png" alt="لقطة شاشة تطبيق المصحف الكوني" width="720" height="1600" decoding="async" fetchpriority="high" />
-              <img class="phone-preview" src="assets/megabit-screen.png" alt="لقطة شاشة تطبيق ميجابت" width="720" height="1600" decoding="async" aria-hidden="true" />
-              <img class="phone-preview" src="assets/pdf-screen.png" alt="لقطة شاشة تطبيق Nexora Office PDF" width="720" height="1600" decoding="async" aria-hidden="true" />
+              <img class="phone-preview is-active" src="assets/quran-screen.jpg" alt="لقطة شاشة تطبيق المصحف الكوني" width="720" height="1600" decoding="async" fetchpriority="high" />
+              <img class="phone-preview" src="assets/megabit-screen.jpg" alt="لقطة شاشة تطبيق ميجابت" width="720" height="1600" decoding="async" aria-hidden="true" fetchpriority="low" />
+              <img class="phone-preview" src="assets/pdf-screen.jpg" alt="لقطة شاشة تطبيق Nexora Office PDF" width="720" height="1600" decoding="async" aria-hidden="true" fetchpriority="low" />
             </div>
           </div>
           <span class="floating-note note-one">بسيط، لكنه ذكي <b>✦</b></span>
@@ -170,56 +174,56 @@
             <a class="card-link" href="https://play.google.com/store/apps/details?id=com.bahnabwi.alqurankarim&amp;pcampaignid=web_share" target="_blank" rel="noopener noreferrer"><span>شاهده على Google Play</span><b>↗</b></a>
           </article>
           <article class="app-card">
-            <div class="app-visual project-preview"><img src="assets/megabit-website-preview.png" alt="لقطة شاشة لموقع MegaBit WiFi تعرض الصفحة الرئيسية وأدوات الشبكة" width="1349" height="643" loading="lazy" decoding="async" /><span class="visual-badge">موقع ويب</span></div>
+            <div class="app-visual project-preview"><img src="assets/megabit-website-preview.jpg" alt="لقطة شاشة لموقع MegaBit WiFi تعرض الصفحة الرئيسية وأدوات الشبكة" width="1349" height="643" loading="lazy" decoding="async" /><span class="visual-badge">موقع ويب</span></div>
             <div class="app-info"><div><p class="card-kicker">NETWORK TOOLS WEBSITE</p><h3>MegaBit WiFi</h3></div><span class="card-arrow">↗</span></div>
             <p class="app-description">موقع تعريفي لأدوات MegaBit WiFi، يشرح قياس سرعة الاتصال وتحليل الشبكات والخصوصية وإدارة الراوتر.</p>
             <div class="card-tags"><span>Wi-Fi</span><span>أدوات الشبكة</span><span>ويب</span></div>
             <a class="card-link" href="https://megabit.nexorastudio-eg.com/" target="_blank" rel="noopener noreferrer"><span>زيارة موقع MegaBit WiFi</span><b>↗</b></a>
           </article>
           <article class="app-card">
-            <div class="app-visual project-preview"><img src="assets/nexora-pdf-website-preview.png" alt="لقطة شاشة لموقع Nexora PDF Office وأدوات إدارة ملفات PDF" width="1349" height="643" loading="lazy" decoding="async" /><span class="visual-badge">موقع ويب</span></div>
+            <div class="app-visual project-preview"><img src="assets/nexora-pdf-website-preview.jpg" alt="لقطة شاشة لموقع Nexora PDF Office وأدوات إدارة ملفات PDF" width="1349" height="643" loading="lazy" decoding="async" /><span class="visual-badge">موقع ويب</span></div>
             <div class="app-info"><div><p class="card-kicker">PDF TOOLS WEBSITE</p><h3>Nexora PDF Office</h3></div><span class="card-arrow">↗</span></div>
             <p class="app-description">موقع يتيح قراءة ملفات PDF ودمجها وتنظيم صفحاتها وتحويلها مباشرة في المتصفح، مع معالجة محلية تحافظ على الخصوصية.</p>
             <div class="card-tags"><span>PDF</span><span>خصوصية</span><span>أدوات ويب</span></div>
             <a class="card-link" href="https://pdf.nexorastudio-eg.com/" target="_blank" rel="noopener noreferrer"><span>زيارة موقع Nexora PDF Office</span><b>↗</b></a>
           </article>
           <article class="app-card">
-            <div class="app-visual project-preview"><img src="assets/apple-store-egypt-preview.png" alt="لقطة شاشة لمتجر Apple في مصر لعرض وطلب هواتف iPhone" width="1349" height="643" loading="lazy" decoding="async" /><span class="visual-badge">مشروع ويب</span></div>
+            <div class="app-visual project-preview"><img src="assets/apple-store-egypt-preview.jpg" alt="لقطة شاشة لمتجر Apple في مصر لعرض وطلب هواتف iPhone" width="1349" height="643" loading="lazy" decoding="async" /><span class="visual-badge">مشروع ويب</span></div>
             <div class="app-info"><div><p class="card-kicker">APPLE STORE · EGYPT</p><h3>Apple Store Egypt</h3></div><span class="card-arrow">↗</span></div>
             <p class="app-description">متجر إلكتروني لعرض أحدث هواتف Apple في مصر، مع خيارات الطلب والدفع عند الاستلام والتوصيل.</p>
             <div class="card-tags"><span>Apple</span><span>تجارة إلكترونية</span><span>ويب</span></div>
             <a class="card-link" href="https://nexorastudiodevv-ctrl.github.io/apple-store-egypt/" target="_blank" rel="noopener noreferrer"><span>زيارة Apple Store Egypt</span><b>↗</b></a>
           </article>
           <article class="app-card">
-            <div class="app-visual project-preview"><img src="assets/moda-store-preview.png" alt="لقطة شاشة لمتجر MODA الإلكتروني لعرض تشكيلة الملابس والأزياء" width="1348" height="642" loading="lazy" decoding="async" /><span class="visual-badge">متجر إلكتروني</span></div>
+            <div class="app-visual project-preview"><img src="assets/moda-store-preview.jpg" alt="لقطة شاشة لمتجر MODA الإلكتروني لعرض تشكيلة الملابس والأزياء" width="1348" height="642" loading="lazy" decoding="async" /><span class="visual-badge">متجر إلكتروني</span></div>
             <div class="app-info"><div><p class="card-kicker">FASHION E-COMMERCE</p><h3>MODA Fashion Store</h3></div><span class="card-arrow">↗</span></div>
             <p class="app-description">متجر أزياء إلكتروني يعرض أحدث تشكيلات الملابس، مع أقسام للمنتجات والعروض والمنتجات الجديدة.</p>
             <div class="card-tags"><span>أزياء</span><span>تجارة إلكترونية</span><span>ويب</span></div>
             <a class="card-link" href="https://nexorastudiodevv-ctrl.github.io/-moda-store-website/index.html" target="_blank" rel="noopener noreferrer"><span>زيارة متجر MODA</span><b>↗</b></a>
           </article>
           <article class="app-card">
-            <div class="app-visual project-preview project-preview-avam"><img src="assets/ahmed-web-portfolio-preview.png" alt="لقطة شاشة لموقع ملف أعمال أحمد الفايد الشخصي" width="768" height="1727" loading="lazy" decoding="async" /><span class="visual-badge">ملف أعمال</span></div>
+            <div class="app-visual project-preview project-preview-avam"><img src="assets/ahmed-web-portfolio-preview.jpg" alt="لقطة شاشة لموقع ملف أعمال أحمد الفايد الشخصي" width="768" height="1727" loading="lazy" decoding="async" /><span class="visual-badge">ملف أعمال</span></div>
             <div class="app-info"><div><p class="card-kicker">PERSONAL PORTFOLIO</p><h3>AhmedDev Portfolio</h3></div><span class="card-arrow">↗</span></div>
             <p class="app-description">ملف أعمال شخصي يعرض مشاريع تطوير الويب والخدمات الرقمية، مع أقسام للتعريف بالمطور والتواصل معه.</p>
             <div class="card-tags"><span>تطوير ويب</span><span>ملف أعمال</span><span>تصميم متجاوب</span></div>
             <a class="card-link" href="https://nexorastudiodevv-ctrl.github.io/my-portfolio/" target="_blank" rel="noopener noreferrer"><span>زيارة ملف الأعمال</span><b>↗</b></a>
           </article>
           <article class="app-card">
-            <div class="app-visual project-preview project-preview-avam"><img src="assets/nexora-studio-website-preview.png" alt="لقطة شاشة لموقع Nexora Studio لخدمات التصميم وتطوير الويب والتطبيقات" width="768" height="2348" loading="lazy" decoding="async" /><span class="visual-badge">موقع أعمال</span></div>
+            <div class="app-visual project-preview project-preview-avam"><img src="assets/nexora-studio-website-preview.jpg" alt="لقطة شاشة لموقع Nexora Studio لخدمات التصميم وتطوير الويب والتطبيقات" width="768" height="2348" loading="lazy" decoding="async" /><span class="visual-badge">موقع أعمال</span></div>
             <div class="app-info"><div><p class="card-kicker">DIGITAL AGENCY WEBSITE</p><h3>Nexora Studio</h3></div><span class="card-arrow">↗</span></div>
             <p class="app-description">موقع استوديو رقمي يعرض خدمات تصميم وتطوير المواقع والتطبيقات، واستشارات التقنية ونمو الأعمال.</p>
             <div class="card-tags"><span>تصميم وتطوير</span><span>تطبيقات</span><span>خدمات رقمية</span></div>
             <a class="card-link" href="https://nexorastudiodevv-ctrl.github.io/-Nexora-Studio/" target="_blank" rel="noopener noreferrer"><span>زيارة موقع Nexora Studio</span><b>↗</b></a>
           </article>
           <article class="app-card">
-            <div class="app-visual project-preview"><img src="assets/gold-currency-dashboard.png" alt="لقطة شاشة لموقع سوق المال المباشر تعرض أسعار الذهب والعملات" width="1349" height="643" loading="lazy" decoding="async" /><span class="visual-badge">موقع ويب</span></div>
+            <div class="app-visual project-preview"><img src="assets/gold-currency-dashboard.jpg" alt="لقطة شاشة لموقع سوق المال المباشر تعرض أسعار الذهب والعملات" width="1349" height="643" loading="lazy" decoding="async" /><span class="visual-badge">موقع ويب</span></div>
             <div class="app-info"><div><p class="card-kicker">GOLD &amp; CURRENCY</p><h3>سوق المال المباشر</h3></div><span class="card-arrow">↗</span></div>
             <p class="app-description">موقع ويب لمتابعة أسعار الذهب والعملات، يعرض معلومات السوق في واجهة سهلة الوصول.</p>
             <div class="card-tags"><span>أسعار الذهب</span><span>العملات</span><span>ويب</span></div>
             <a class="card-link" href="https://nexorastudio-eg.com/" target="_blank" rel="noopener noreferrer"><span>زيارة موقع أسعار الذهب والعملات</span><b>↗</b></a>
           </article>
           <article class="app-card">
-            <div class="app-visual project-preview project-preview-avam"><img src="assets/avam-flight-booking.png" alt="لقطة شاشة لموقع AVAM لعرض وجهات السفر وتذاكر الطيران" width="768" height="1554" loading="lazy" decoding="async" /><span class="visual-badge">مشروع ويب</span></div>
+            <div class="app-visual project-preview project-preview-avam"><img src="assets/avam-flight-booking.jpg" alt="لقطة شاشة لموقع AVAM لعرض وجهات السفر وتذاكر الطيران" width="768" height="1554" loading="lazy" decoding="async" /><span class="visual-badge">مشروع ويب</span></div>
             <div class="app-info"><div><p class="card-kicker">TRAVEL &amp; FLIGHT TICKETS</p><h3>AVAM</h3></div><span class="card-arrow">↗</span></div>
             <p class="app-description">موقع متخصص في السفر وعرض تذاكر الطيران لمساعدة الزوار على استكشاف خيارات الرحلات.</p>
             <div class="card-tags"><span>السفر</span><span>تذاكر الطيران</span><span>ويب</span></div>
@@ -304,6 +308,6 @@
       <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 3.5A11.8 11.8 0 0 0 12.1 0C5.6 0 .4 5.2.4 11.7c0 2.1.6 4.1 1.6 5.8L.3 23.9l6.5-1.7a11.8 11.8 0 0 0 5.3 1.3h.1c6.4 0 11.7-5.2 11.7-11.7 0-3.1-1.2-6-3.4-8.3Zm-8.4 18c-1.7 0-3.4-.5-4.9-1.3l-.4-.2-3.9 1 1-3.8-.2-.4a9.7 9.7 0 1 1 8.4 4.7Zm5.3-7.2c-.3-.2-1.8-.9-2.1-1-.3-.1-.5-.2-.7.2-.2.3-.8 1-1 1.2-.2.2-.4.2-.7.1-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.7l.5-.6c.2-.2.2-.4.3-.6.1-.2 0-.5 0-.7-.1-.2-.7-1.7-1-2.3-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4-.3.3-1.1 1-1.1 2.5s1.1 2.9 1.3 3.1c.2.2 2.1 3.3 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.8-.7 2.1-1.4.3-.7.3-1.3.2-1.4-.1-.2-.3-.3-.6-.4Z"/></svg>
     </a>
     <footer class="site-footer"><span>© 2026 Ahmed AlFayed (Nexora Studio EG)</span><span>صُنع بشغف لتجارب أندرويد أفضل</span><a href="blog/index.html">المدونة</a><a href="privacy-policy.html">سياسة الخصوصية</a><button class="pwa-install-button" type="button" data-pwa-install>تثبيت الموقع كتطبيق</button><a href="#home">إلى الأعلى ↑</a></footer>
-    <script src="script.js"></script>
+    <script defer src="script.js"></script>
   </body>
 </html>
