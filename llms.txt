@@ -1,0 +1,52 @@
+# Ahmed AlFayed | Nexora Studio EG
+
+> موقع شخصي لأحمد الفايد، مطور مستقل من القاهرة، مصر. يصمم وينفذ تطبيقات أندرويد ومواقع ويب، ويعرض أعماله المنشورة وأدلة عملية عن البرمجة وتطوير التطبيقات.
+
+## عن الموقع
+
+- Ahmed AlFayed هو مطور مستقل، وNexora Studio EG هويته الشخصية.
+- تشمل مجالات العمل تطوير تطبيقات أندرويد، تطوير مواقع الويب، وتحسين التطبيقات الموجودة.
+- يعرض الموقع تطبيقات منشورة على Google Play ومشاريع ويب وأدلة تعليمية.
+- لا يعرض الموقع أسعارًا أو ضمانات نتائج؛ تواصل مع المطور لمناقشة تفاصيل المشروع.
+
+## الصفحات الرئيسية
+
+- [الصفحة الرئيسية بالعربية](https://ahmed-alfayed.nexorastudio-eg.com/): نبذة عن المطور، الأعمال، المشاريع، وطرق التواصل.
+- [Homepage in English](https://ahmed-alfayed.nexorastudio-eg.com/index-en.html): English overview of the developer, work, and contact options.
+- [التواصل](https://ahmed-alfayed.nexorastudio-eg.com/contact.html): تواصل بخصوص تطوير التطبيقات أو المواقع أو تحسين تطبيق موجود.
+- [Contact in English](https://ahmed-alfayed.nexorastudio-eg.com/contact-en.html)
+
+## تطبيقات مختارة
+
+- [MegaBit](https://ahmed-alfayed.nexorastudio-eg.com/apps/megabit.html): صفحة التطبيق وأدوات الشبكات.
+- [Nexora Office](https://ahmed-alfayed.nexorastudio-eg.com/apps/nexora-office.html): معلومات تطبيق إدارة ملفات PDF.
+- [القرآن الكريم](https://ahmed-alfayed.nexorastudio-eg.com/apps/quran.html): معلومات تطبيق القرآن الكريم.
+- [صفحة المطور على Google Play](https://play.google.com/store/apps/developer?id=Nexora+Studio+EG): قائمة التطبيقات المنشورة.
+
+## المشاريع
+
+- [MegaBit WiFi](https://megabit.nexorastudio-eg.com/)
+- [Nexora PDF Office](https://pdf.nexorastudio-eg.com/)
+- [سوق المال المباشر](https://nexorastudio-eg.com/)
+- [AVAM](https://avam.nexorastudio-eg.com/)
+
+## أدلة ومقالات
+
+- [فهرس المدونة العربية](https://ahmed-alfayed.nexorastudio-eg.com/blog/)
+- [English blog index](https://ahmed-alfayed.nexorastudio-eg.com/blog/index-en.html)
+- [دليل JavaScript](https://ahmed-alfayed.nexorastudio-eg.com/blog/javascript-guide.html)
+- [دليل CSS](https://ahmed-alfayed.nexorastudio-eg.com/blog/css-guide.html)
+- [دليل HTML](https://ahmed-alfayed.nexorastudio-eg.com/blog/html-guide.html)
+- [الذكاء الاصطناعي على الجهاز أم في السحابة؟](https://ahmed-alfayed.nexorastudio-eg.com/blog/ai-on-device.html)
+
+## التواصل
+
+- البريد الإلكتروني: [nexorastudio.devv@gmail.com](mailto:nexorastudio.devv@gmail.com)
+- [صفحة التواصل وواتساب](https://ahmed-alfayed.nexorastudio-eg.com/contact.html)
+- [GitHub](https://github.com/nexorastudiodevv-ctrl)
+- [LinkedIn](https://www.linkedin.com/in/ahmed-shehata-04456143a)
+
+## اكتشاف الموقع
+
+- [خريطة الموقع](https://ahmed-alfayed.nexorastudio-eg.com/sitemap.xml)
+- [سياسة الخصوصية](https://ahmed-alfayed.nexorastudio-eg.com/privacy-policy.html)
