@@ -5,8 +5,10 @@ if (phoneCarousel) {
   const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
   let activeIndex = 0;
   let rotationTimer;
+  let started = false;
 
   const showSlide = (index) => {
+    if (!slides[activeIndex]) return;
     slides[activeIndex].classList.remove("is-active");
     slides[activeIndex].setAttribute("aria-hidden", "true");
     activeIndex = index;
@@ -20,20 +22,38 @@ if (phoneCarousel) {
   };
 
   const startRotation = () => {
+    if (started) return;
     stopRotation();
     if (reducedMotion.matches || document.hidden || slides.length < 2) return;
+    started = true;
     rotationTimer = window.setInterval(() => {
       showSlide((activeIndex + 1) % slides.length);
     }, 3000);
   };
 
-  document.addEventListener("visibilitychange", startRotation);
+  const maybeStartCarousel = () => {
+    if (document.visibilityState === "visible" && phoneCarousel.getBoundingClientRect().top < window.innerHeight * 1.5) {
+      startRotation();
+    }
+  };
+
+  document.addEventListener("visibilitychange", maybeStartCarousel);
   if (typeof reducedMotion.addEventListener === "function") {
-    reducedMotion.addEventListener("change", startRotation);
+    reducedMotion.addEventListener("change", maybeStartCarousel);
   } else {
-    reducedMotion.addListener(startRotation);
+    reducedMotion.addListener(maybeStartCarousel);
   }
-  startRotation();
+
+  if ("IntersectionObserver" in window) {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) startRotation();
+      });
+    }, { rootMargin: "200px" });
+    observer.observe(phoneCarousel);
+  } else {
+    maybeStartCarousel();
+  }
 }
 
 document.querySelectorAll('a[href^="#"]').forEach((link) => {
@@ -76,8 +96,16 @@ document.querySelectorAll("[data-whatsapp-form]").forEach((form) => {
 });
 
 if ("serviceWorker" in navigator && window.isSecureContext) {
-  navigator.serviceWorker.register("/service-worker.js")
-    .catch((error) => console.error("Nexora PWA service worker registration failed:", error));
+  const registerServiceWorker = () => {
+    navigator.serviceWorker.register("/service-worker.js")
+      .catch((error) => console.error("Nexora PWA service worker registration failed:", error));
+  };
+
+  if ("requestIdleCallback" in window) {
+    requestIdleCallback(() => registerServiceWorker());
+  } else {
+    window.setTimeout(registerServiceWorker, 1500);
+  }
 }
 
 const installButton = document.querySelector("[data-pwa-install]");
