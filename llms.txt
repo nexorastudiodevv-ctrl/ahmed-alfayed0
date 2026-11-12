@@ -21,7 +21,7 @@
 - [MegaBit](https://ahmed-alfayed.nexorastudio-eg.com/apps/megabit.html): صفحة التطبيق وأدوات الشبكات.
 - [Nexora Office](https://ahmed-alfayed.nexorastudio-eg.com/apps/nexora-office.html): معلومات تطبيق إدارة ملفات PDF.
 - [القرآن الكريم](https://ahmed-alfayed.nexorastudio-eg.com/apps/quran.html): معلومات تطبيق القرآن الكريم.
-- [صفحة المطور على Google Play](https://play.google.com/store/apps/developer?id=Nexora+Studio+EG): قائمة التطبيقات المنشورة.
+- [صفحة المطور على Google Play](https://play.google.com/store/apps/dev?id=8639547285062395291): قائمة التطبيقات المنشورة.
 
 ## المشاريع
 
