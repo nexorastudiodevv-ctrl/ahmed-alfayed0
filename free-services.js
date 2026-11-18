@@ -54,6 +54,20 @@ const labels = isArabic ? {
   description: "A curated collection of useful websites and apps, with a clear notice when a paid plan is available.",
 };
 
+const suggestedServices = [{
+  id: null,
+  name: "Canva",
+  category: "design",
+  serviceType: "web-app",
+  pricing: "freemium",
+  description: isArabic
+    ? "صمم منشورات السوشيال ميديا والعروض التقديمية والفيديوهات واللوجوهات بقوالب جاهزة وخطة مجانية."
+    : "Design social media posts, presentations, videos, and logos with ready-made templates and a free plan.",
+  url: "https://www.canva.com/",
+  imageUrl: "",
+  order: 10,
+}];
+
 const root = document.querySelector("[data-free-services]");
 if (!root) throw new Error("Free services section not found.");
 
@@ -101,18 +115,21 @@ function createCard(service, database) {
   link.target = "_blank";
   link.rel = "noopener noreferrer";
   link.textContent = `${labels[service.serviceType] || labels.website} ↗`;
-  link.addEventListener("click", () => {
-    updateDoc(doc(database, "freeServices", service.id), { clicks: increment(1) }).catch((error) => {
-      console.error("Could not record the service click.", error);
+  if (service.id) {
+    link.addEventListener("click", () => {
+      updateDoc(doc(database, "freeServices", service.id), { clicks: increment(1) }).catch((error) => {
+        console.error("Could not record the service click.", error);
+      });
     });
-  });
+  }
   card.append(link);
   return card;
 }
 
 async function loadServices() {
   if (!isConfigured) {
-    grid.textContent = labels.empty;
+    grid.replaceChildren();
+    suggestedServices.forEach((service) => grid.append(createCard(service, null)));
     return;
   }
   const app = initializeApp(firebaseConfig);
@@ -125,16 +142,25 @@ async function loadServices() {
     .map((item) => ({ id: item.id, ...item.data() }))
     .filter((service) => service.name && service.description && service.url)
     .sort((first, second) => (first.order ?? 100) - (second.order ?? 100));
+  const combinedServices = [
+    ...suggestedServices,
+    ...services.filter((service) =>
+      !suggestedServices.some((suggested) =>
+        suggested.name.toLocaleLowerCase() === String(service.name).toLocaleLowerCase()
+      )
+    ),
+  ].sort((first, second) => (first.order ?? 100) - (second.order ?? 100));
   grid.replaceChildren();
-  if (!services.length) {
+  if (!combinedServices.length) {
     grid.textContent = labels.empty;
     return;
   }
-  services.forEach((service) => grid.append(createCard(service, database)));
+  combinedServices.forEach((service) => grid.append(createCard(service, database)));
 }
 
 grid.textContent = labels.loading;
 loadServices().catch((error) => {
   console.error("Could not load free services.", error);
-  grid.textContent = labels.empty;
+  grid.replaceChildren();
+  suggestedServices.forEach((service) => grid.append(createCard(service, null)));
 });
