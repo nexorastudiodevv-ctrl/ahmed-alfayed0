@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="دليل CyberChef العربي: فك تشفير وتحويل وترميز النصوص وفحص الهاش والبيانات وتحليلها باستخدام أداة GCHQ المجانية عبر المتصفح.">
+<meta name="robots" content="index,follow"><meta property="og:type" content="article"><meta property="og:title" content="دليل CyberChef المجاني للعربية">
+<meta property="og:description" content="تعرف على أشهر تحويلات CyberChef وطريقة تحليل النصوص والملفات بأمان في المتصفح.">
+<link rel="canonical" href="https://ahmed-alfayed.nexorastudio-eg.com/blog/cyberchef-guide.html">
+<link rel="stylesheet" href="../styles.css"><link rel="stylesheet" href="../app-pages.css"><link rel="stylesheet" href="blog.css">
+<title>دليل CyberChef: تشفير وفك تشفير وتحليل البيانات مجانًا | Nexora</title>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"دليل CyberChef المجاني لتحليل البيانات وفك التشفير","description":"شرح عملي لاستخدام CyberChef للمطورين والمحللين.","datePublished":"2026-11-19","dateModified":"2026-11-19","inLanguage":"ar","author":{"@type":"Person","name":"Ahmed AlFayed"},"publisher":{"@type":"Organization","name":"Nexora Studio EG"},"mainEntityOfPage":"https://ahmed-alfayed.nexorastudio-eg.com/blog/cyberchef-guide.html"}</script>
+</head>
+<body>
+<header class="site-header"><a class="brand" href="../index.html"><img class="brand-logo" src="../assets/ahmed-profile-icon-512.webp" alt="Nexora" width="512" height="512"><span><strong>Ahmed AlFayed</strong><small>Nexora Studio EG</small></span></a><nav class="nav-links"><a href="../index.html#work">التطبيقات</a><a href="../free-services.html">خدمات مجانية</a><a href="index.html">المدونة</a></nav><div class="header-actions"><a class="header-cta" href="../free-services.html">كل الخدمات ↗</a></div></header>
+<main class="blog-article-main">
+<nav class="blog-breadcrumb"><a href="../index.html">الرئيسية</a><span>/</span><a href="../free-services.html">الخدمات المجانية</a><span>/</span><span>CyberChef</span></nav>
+<article><header class="blog-article-header"><div class="blog-card-meta"><span class="blog-category">البرمجة والأمن · CyberChef</span><time datetime="2026-11-19">19 نوفمبر 2026</time></div><h1>دليل CyberChef المجاني لتحليل البيانات وفك التشفير</h1><p class="blog-article-summary">CyberChef هو سكين الجيش السويسري للأدوات النصية والبيانات. يجمع ترميز وفك الترميز والتحويل والتشفير وفحص الهاش وتحليل الملفات في واجهة يمكن تشغيلها مباشرة من المتصفح.</p></header>
+<div class="blog-article-content">
+<a class="button button-dark" href="https://gchq.github.io/CyberChef/" target="_blank" rel="noopener noreferrer">افتح CyberChef <span>↗</span></a>
+<h2>ما هي CyberChef؟</h2><p>CyberChef مشروع مفتوح المصدر طوره GCHQ، ويعمل كمعمل عملي لمعالجة البيانات. بدل كتابة برنامج صغير لكل تحويل، تختار عملية من القائمة وتضعها في سلسلة تشغيلية، ثم ترى النتيجة فورًا. المزايا مفيدة عند التعامل مع Base64 وHex وURL encoding وJSON وHashes وفحص المخرجات المشوهة.</p>
+<h2>كيف تعمل السلسلة؟</h2><p>تدخل النص أو الملف في مربع الإدخال، اسحب التحويلات إلى منطقة الوصفة، ثم اضغط Bake أو استخدم التنفيذ التلقائي إن كان متاحًا. يمر الناتج من كل خطوة بالترتيب. مثلاً، لتحويل نص Base64 إلى نص واضح تستخدم من_to وFrom Base64، ثم From Hex إن كانت البيانات لا تزال مشفرة بهذا الشكل.</p>
+<h2>أهم التحويلات للمبتدئين</h2><ul><li><strong>From/To Base64:</strong> لتصحيح أو إنشاء نص مشفر بالصيغة الأكثر انتشارًا في انتقال البيانات.</li><li><strong>URL Decode/Encode:</strong> لفك أو تكوين عناوين وروابط ومقاييس الاستعلام.</li><li><strong>JSON Beautify/Minify:</strong> لتنسيق بيانات JSON أو تصغيرها للمعالجة.</li><li><strong>Hash:</strong> لحساب بصمات SHA وMD5 والمقارنة الآمنة قدر الإمكان.</li><li><strong>Extract Data:</strong> لإيجاد عناوين وروابط أو أنماط داخل نص كبير.</li><li><strong>Magic:</strong> لمحاولة اكتشاف التحويل المناسب تلقائيًا، مع التحقق اليدوي للنتيجة.</li></ul>
+<h2>مثال عملي لفك Base64</h2><p>الصق النص المشفر في الإدخال، أضف عملية From Base64 ثم اختر UTF-8 في المعلمات إن توفرت. راقب جزء النتيجة ولا تفترض أنها صحيحة لمجرد ظهور نص مفهوم. قد يكون محتوى Base64 نتيجة ضغط أو تشفير إضافي يحتاج معالجة أخرى.</p>
+<h2>فحص الهاش والملفات</h2><p>CyberChef يمكنه حساب بصمة ملفات صغيرة وبيانات نصية مباشرة. لكن الهاش لا يثبت سلامة الملف وحده؛ قارن القيمة بالأصل المعلن من المصدر الموثوق واستخدم أحجام متعددة مثل SHA-256 لتقليل احتمال الخطأ. لا تحذف الملف الأصلي حتى تؤكد النسخة الجديدة.</p>
+<h2>حالات الاستخدام الآمنة</h2><p>يستخدمه المطورون لفحص سجلات الخادم وفروق الرموز وفك استجابات التطبيقات وتحليل البيانات الواردة من مختبرات تدريب أو اختبارات أمنية مصرح بها. تجنب وضع كلمات المرور والمفاتيح أو بيانات العملاء الحقيقية في نسخة عامة من التطبيق؛ استخدم بيانات تجريبية أو نسخة موثوقة ومنفصلة من الملفات الحساسة.</p>
+<h2>حدود الكشف الآلي</h2><p>عملية Magic أو اكتشاف النوع تخمن الغرض من النص ولا تحسمه. قد يحول المحتوى المشفر إلى نتيجة مضللة بسبب تشابه رموز أو صيغ مختلفة. افحص كل خطوة وحددها، وقارن القيمة الناتجة بمصدرها، ولا تنفذ أوامر غير مؤكدة مستخرجة من بيانات لا تثق بها.</p>
+<h2>الخلاصة</h2><p>CyberChef خدمة قوية ومجانية لإنجاز تحويلات متكررة وتحليل البيانات دون تثبيت برمجيات كثيرة. هي مفيدة للتعلم وفحص الملفات والـ APIs والتحليل الأمني الشرعي؛ النجاح يعتمد على فهم السلسلة والنتيجة، لا على الضغط على زر واحد فقط.</p>
+<footer class="blog-post-footer"><a href="https://gchq.github.io/CyberChef/" target="_blank" rel="noopener noreferrer">افتح CyberChef مجانًا</a><a href="../free-services.html">العودة للخدمات المجانية</a></footer>
+</div></article></main>
+<footer class="site-footer"><span>© 2026 Nexora Studio EG</span><a href="../index.html">الصفحة الرئيسية ↑</a></footer>
+</body></html>

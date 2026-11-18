@@ -82,6 +82,7 @@ const suggestedServices = [{
   url: "https://gchq.github.io/CyberChef/",
   imageUrl: "https://github.com/gchq.png",
   order: 20,
+  articleUrl: "blog/cyberchef-guide.html",
 }, {
   id: null,
   name: "IT Tools",
@@ -94,6 +95,7 @@ const suggestedServices = [{
   url: "https://it-tools.tech/",
   imageUrl: "https://github.com/CorentinTh.png",
   order: 30,
+  articleUrl: "blog/it-tools-guide.html",
 }, {
   id: null,
   name: "Squoosh",
@@ -106,6 +108,7 @@ const suggestedServices = [{
   url: "https://squoosh.app/",
   imageUrl: "https://github.com/GoogleChromeLabs.png",
   order: 40,
+  articleUrl: "blog/squoosh-guide.html",
 }, {
   id: null,
   name: "PDF.js Viewer",
@@ -118,6 +121,7 @@ const suggestedServices = [{
   url: "https://mozilla.github.io/pdf.js/web/viewer.html",
   imageUrl: "https://github.com/mozilla.png",
   order: 50,
+  articleUrl: "blog/pdfjs-guide.html",
 }, {
   id: null,
   name: "Excalidraw",
@@ -130,6 +134,7 @@ const suggestedServices = [{
   url: "https://excalidraw.com/",
   imageUrl: "https://github.com/excalidraw.png",
   order: 60,
+  articleUrl: "blog/excalidraw-guide.html",
 }];
 
 const root = document.querySelector("[data-free-services]");
