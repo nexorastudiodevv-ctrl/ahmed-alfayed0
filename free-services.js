@@ -9,7 +9,7 @@ import {
   updateDoc,
   where,
 } from "https://www.gstatic.com/firebasejs/10.12.5/firebase-firestore.js";
-import { firebaseConfig } from "./admin/firebase-config.js";
+import { firebaseConfig } from "./firebase-config.js";
 
 const isArabic = document.documentElement.lang === "ar";
 const isConfigured = Object.values(firebaseConfig).every(
