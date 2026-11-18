@@ -204,6 +204,8 @@ async function loadServices() {
     suggestedServices.forEach((service) => grid.append(createCard(service, null)));
     return;
   }
+  grid.replaceChildren();
+  suggestedServices.forEach((service) => grid.append(createCard(service, null)));
   const app = initializeApp(firebaseConfig);
   const database = getFirestore(app);
   const snapshot = await getDocs(query(
