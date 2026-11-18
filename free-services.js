@@ -64,7 +64,8 @@ const suggestedServices = [{
     ? "صمم منشورات السوشيال ميديا والعروض التقديمية والفيديوهات واللوجوهات بقوالب جاهزة وخطة مجانية."
     : "Design social media posts, presentations, videos, and logos with ready-made templates and a free plan.",
   url: "https://www.canva.com/",
-  imageUrl: "",
+  imageUrl: "assets/canva-guide-cover.svg",
+  isCover: true,
   order: 10,
   articleUrl: isArabic ? "blog/canva-guide.html" : "blog/canva-guide-en.html",
 }];
@@ -84,7 +85,7 @@ function createCard(service, database) {
 
   if (service.imageUrl) {
     const image = document.createElement("img");
-    image.className = "free-service-logo";
+    image.className = service.isCover ? "free-service-cover" : "free-service-logo";
     image.src = service.imageUrl;
     image.alt = service.name;
     image.loading = "lazy";
