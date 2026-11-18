@@ -23,6 +23,7 @@ const labels = isArabic ? {
   productivity: "الإنتاجية",
   education: "التعليم",
   network: "الشبكات والأدوات",
+  pdf: "ملفات PDF",
   other: "خدمات أخرى",
   free: "مجاني بالكامل",
   freemium: "خطة مجانية",
@@ -41,6 +42,7 @@ const labels = isArabic ? {
   productivity: "Productivity",
   education: "Education",
   network: "Networks & tools",
+  pdf: "PDF tools",
   other: "Other services",
   free: "Free",
   freemium: "Free plan",
@@ -68,6 +70,66 @@ const suggestedServices = [{
   isCover: true,
   order: 10,
   articleUrl: isArabic ? "blog/canva-guide.html" : "blog/canva-guide-en.html",
+}, {
+  id: null,
+  name: "CyberChef",
+  category: "development",
+  serviceType: "web-app",
+  pricing: "free",
+  description: isArabic
+    ? "أداة ويب مجانية من GCHQ لتحليل النصوص وفك التشفير والتحويل والتشفير والضغط وفحص البيانات."
+    : "A free GCHQ web tool for text analysis, decoding, encoding, encryption, compression, and data inspection.",
+  url: "https://gchq.github.io/CyberChef/",
+  imageUrl: "https://github.com/gchq.png",
+  order: 20,
+}, {
+  id: null,
+  name: "IT Tools",
+  category: "development",
+  serviceType: "web-app",
+  pricing: "free",
+  description: isArabic
+    ? "مجموعة أدوات مطورين مفتوحة المصدر للتحويل والترميز وفحص JSON وتوليد مفاتيح وتنفيذ مهام يومية."
+    : "An open-source collection of developer tools for conversion, encoding, JSON inspection, key generation, and daily tasks.",
+  url: "https://it-tools.tech/",
+  imageUrl: "https://github.com/CorentinTh.png",
+  order: 30,
+}, {
+  id: null,
+  name: "Squoosh",
+  category: "other",
+  serviceType: "web-app",
+  pricing: "free",
+  description: isArabic
+    ? "ضغط وتحويل الصور مباشرة في المتصفح من مشروع Google Chrome Labs، بدون رفعها إلى خادم خارجي."
+    : "Compress and convert images directly in the browser using Google Chrome Labs Squoosh, without uploading them to a server.",
+  url: "https://squoosh.app/",
+  imageUrl: "https://github.com/GoogleChromeLabs.png",
+  order: 40,
+}, {
+  id: null,
+  name: "PDF.js Viewer",
+  category: "pdf",
+  serviceType: "web-app",
+  pricing: "free",
+  description: isArabic
+    ? "عارض PDF رسمي مفتوح المصدر من Mozilla لفتح ملفات PDF وقراءة الصفحات والبحث فيها في المتصفح."
+    : "Mozilla’s open-source PDF reader for opening, viewing, searching, and navigating PDF documents in the browser.",
+  url: "https://mozilla.github.io/pdf.js/web/viewer.html",
+  imageUrl: "https://github.com/mozilla.png",
+  order: 50,
+}, {
+  id: null,
+  name: "Excalidraw",
+  category: "productivity",
+  serviceType: "web-app",
+  pricing: "free",
+  description: isArabic
+    ? "لوحة رسم بيضاء مفتوحة المصدر لرسم المخططات والجداول والخرائط الذهنية والتعاون بصريًا."
+    : "An open-source virtual whiteboard for hand-drawn diagrams, flowcharts, mind maps, and visual collaboration.",
+  url: "https://excalidraw.com/",
+  imageUrl: "https://github.com/excalidraw.png",
+  order: 60,
 }];
 
 const root = document.querySelector("[data-free-services]");
