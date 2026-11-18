@@ -66,6 +66,7 @@ const suggestedServices = [{
   url: "https://www.canva.com/",
   imageUrl: "",
   order: 10,
+  articleUrl: isArabic ? "blog/canva-guide.html" : "blog/canva-guide-en.html",
 }];
 
 const root = document.querySelector("[data-free-services]");
@@ -110,7 +111,7 @@ function createCard(service, database) {
   card.append(badge);
 
   const link = document.createElement("a");
-  link.className = "free-service-link";
+  link.className = "free-service-link free-service-open";
   link.href = service.url;
   link.target = "_blank";
   link.rel = "noopener noreferrer";
@@ -123,6 +124,14 @@ function createCard(service, database) {
     });
   }
   card.append(link);
+
+  if (service.articleUrl) {
+    const articleLink = document.createElement("a");
+    articleLink.className = "free-service-guide";
+    articleLink.href = service.articleUrl;
+    articleLink.textContent = isArabic ? "اقرأ دليل Canva الكامل" : "Read the complete Canva guide";
+    card.insertBefore(articleLink, link);
+  }
   return card;
 }
 
