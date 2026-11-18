@@ -72,6 +72,20 @@ const suggestedServices = [{
   articleUrl: isArabic ? "blog/canva-guide.html" : "blog/canva-guide-en.html",
 }, {
   id: null,
+  name: "Hugging Face AI Studio",
+  category: "ai",
+  serviceType: "web-app",
+  pricing: "freemium",
+  description: isArabic
+    ? "دليل تجارب Hugging Face لإنشاء الصور والفيديو وتحويل النص إلى صورة أو فيديو عبر نماذج ذكاء اصطناعي؛ قد تكون أوقات التشغيل والاعتمادات محدودة."
+    : "Explore Hugging Face demos for image and video generation, text-to-image, text-to-video, and editing; runtime and free GPU access may be limited.",
+  url: "https://huggingface.co/spaces",
+  imageUrl: "assets/huggingface-ai-cover.svg",
+  isCover: true,
+  order: 15,
+  articleUrl: "blog/huggingface-ai-guide.html",
+}, {
+  id: null,
   name: "CyberChef",
   category: "development",
   serviceType: "web-app",

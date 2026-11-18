@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Hugging Face AI image and video generation</title>
+  <desc id="desc">A dark creative workspace showing AI image and video generation tools.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#17211f"/><stop offset="1" stop-color="#35534a"/></linearGradient>
+    <linearGradient id="glow" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#ffd166"/><stop offset="1" stop-color="#98b79c"/></linearGradient>
+  </defs>
+  <rect width="1200" height="630" rx="36" fill="url(#bg)"/>
+  <circle cx="1010" cy="90" r="230" fill="#ffd166" opacity=".08"/>
+  <circle cx="160" cy="610" r="260" fill="#98b79c" opacity=".09"/>
+  <rect x="72" y="74" width="1056" height="482" rx="28" fill="#f7f5ea"/>
+  <rect x="72" y="74" width="1056" height="72" rx="28" fill="#263a30"/>
+  <rect x="72" y="118" width="1056" height="28" fill="#263a30"/>
+  <circle cx="112" cy="110" r="8" fill="#f2c14e"/>
+  <text x="138" y="119" fill="#fff" font-family="Arial,sans-serif" font-size="26" font-weight="700">Hugging Face</text>
+  <rect x="112" y="178" width="570" height="334" rx="18" fill="#dfe8d9"/>
+  <rect x="112" y="178" width="570" height="334" rx="18" fill="none" stroke="#b7c8bc" stroke-width="3"/>
+  <circle cx="397" cy="340" r="92" fill="url(#glow)" opacity=".95"/>
+  <path d="M397 266l22 52 56 7-42 38 12 55-48-29-48 29 12-55-42-38 56-7z" fill="#fff" opacity=".92"/>
+  <rect x="710" y="178" width="378" height="334" rx="18" fill="#eef1e8"/>
+  <rect x="736" y="206" width="326" height="62" rx="12" fill="#263a30"/>
+  <text x="766" y="244" fill="#fff" font-family="Arial,sans-serif" font-size="24" font-weight="700">Create with AI</text>
+  <rect x="736" y="292" width="326" height="42" rx="10" fill="#fff"/>
+  <rect x="736" y="350" width="326" height="42" rx="10" fill="#fff"/>
+  <rect x="736" y="424" width="326" height="60" rx="12" fill="#496b50"/>
+  <text x="899" y="462" fill="#fff" text-anchor="middle" font-family="Arial,sans-serif" font-size="23" font-weight="700">Generate</text>
+  <text x="600" y="590" text-anchor="middle" fill="#fff" font-family="Arial,sans-serif" font-size="38" font-weight="700">AI Images &amp; Videos</text>
+</svg>
